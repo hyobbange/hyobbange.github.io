@@ -1,0 +1,21 @@
+# 첫 화면 앱 목록 (서비스 중인 앱만, 위에서부터 순서대로).
+# page: 사이트 안 소개 페이지 (없으면 카드가 스토어로 바로 연결)
+# google_play / app_store: 공개된 스토어만 적는다. 비워 두면 버튼이 숨는다.
+- id: oddball
+  name: { en: "Oddball: Spot the Odd One Out", ko: "이상한 녀석 찾기" }
+  tagline:
+    en: Hundreds of characters look the same. Find the one that is different.
+    ko: 수백 명 중 딱 한 명만 달라요. 숨은그림찾기와 다른그림찾기를 하나로.
+  icon: /assets/img/oddball/icon.png
+  page: /oddball/
+  google_play: https://play.google.com/store/apps/details?id=com.hfx.monsterhunt
+  app_store:  # 출시 뒤 https://apps.apple.com/app/id6818129344
+- id: keyring-gacha
+  name: { en: "Keyring Gacha", ko: "키링 가챠" }
+  tagline:
+    en: Pull capsules, collect cute keyrings and decorate your bag. (Korean)
+    ko: 캡슐을 뽑아 귀여운 키링을 모으고, 내 가방에 달아 꾸며 보세요.
+  icon: /assets/img/keyring-gacha/icon.png
+  page:
+  google_play: https://play.google.com/store/apps/details?id=com.hfx.keyringgacha
+  app_store:  # 출시 뒤 https://apps.apple.com/app/id6824445587

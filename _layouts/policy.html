@@ -1,0 +1,49 @@
+---
+layout: default
+---
+{%- comment -%}
+버전 문서(_policies/...)를 그대로 보여 주거나, 최신판 페이지(privacy/index.md 등)에서
+같은 문서·언어의 가장 최근 시행일 버전을 골라 보여 준다.
+{%- endcomment -%}
+{%- assign t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+{%- assign versions = site.policies | where: "doc", page.doc | where: "lang", page.lang | sort: "version" | reverse -%}
+{%- assign latest = versions | first -%}
+{%- if page.collection == "policies" -%}{%- assign current = page -%}{%- else -%}{%- assign current = latest -%}{%- endif -%}
+{%- assign all_docs = site.policies | where: "doc", page.doc | map: "lang" | uniq -%}
+{%- if page.lang == "en" %}{% assign self_path = "" %}{% else %}{% assign self_path = page.lang | append: "/" %}{% endif -%}
+{%- capture latest_url %}/{{ page.doc }}/{{ self_path }}{% endcapture -%}
+
+<h1>{{ t[page.doc] }}</h1>
+
+<p class="policy-meta">
+  {{ t.effective }}: {{ current.version | date: t.date_format }}
+  {%- if all_docs.size > 1 %} ·
+    {% for l in all_docs %}{% if l == page.lang %}<span>{{ site.data.i18n[l].language_name }}</span>{% else %}{% if l == "en" %}{% assign lp = "" %}{% else %}{% assign lp = l | append: "/" %}{% endif %}<a href="{{ '/' | append: page.doc | append: '/' | append: lp | relative_url }}" lang="{{ l }}">{{ site.data.i18n[l].language_name }}</a>{% endif %}{% unless forloop.last %} / {% endunless %}{% endfor %}
+  {%- endif %}
+</p>
+
+{% if current.url != latest.url -%}
+<p class="notice">{{ t.archived_note }} <a href="{{ latest_url | relative_url }}">{{ t.view_current }} →</a></p>
+{%- endif %}
+
+<div class="policy-body">
+{{ current.content }}
+</div>
+
+<section class="history">
+  <h2>{{ t.history }}</h2>
+  <ul>
+  {%- for v in versions %}
+    {%- if forloop.first -%}{% assign end_text = t.present %}{%- else -%}
+      {%- assign prev_index = forloop.index0 | minus: 1 -%}
+      {%- assign newer = versions[prev_index] -%}
+      {%- assign end_ts = newer.version | date: "%s" | minus: 86400 -%}
+      {%- assign end_text = end_ts | date: t.date_format -%}
+    {%- endif %}
+    <li>
+      {% if v.url == current.url %}<strong>{% endif %}<a href="{{ v.url | relative_url }}">{{ v.version | date: t.date_format }} {{ t.until }} {{ end_text }}</a>{% if v.url == current.url %}</strong>{% endif %}
+      {% if forloop.first %}<span class="badge">{{ t.current_badge }}</span>{% endif %}
+    </li>
+  {%- endfor %}
+  </ul>
+</section>

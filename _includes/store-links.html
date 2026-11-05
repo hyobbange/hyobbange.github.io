@@ -1,0 +1,7 @@
+{%- assign app = site.data.apps | where: "id", include.app | first -%}
+{%- if app.app_store or app.google_play -%}
+<div class="store-links">
+  {%- if app.app_store %}<a href="{{ app.app_store }}">App Store</a>{% endif -%}
+  {%- if app.google_play %}<a href="{{ app.google_play }}">Google Play</a>{% endif -%}
+</div>
+{%- endif -%}

@@ -15,10 +15,7 @@ image: /assets/img/oddball/icon.png
 
 <p class="lang-switch">English · <a href="{{ '/oddball/ko/' | relative_url }}">한국어</a></p>
 
-<div class="store-links">
-  <a href="https://apps.apple.com/app/id6818129344">App Store</a>
-  <a href="https://play.google.com/store/apps/details?id=com.hfx.monsterhunt">Google Play</a>
-</div>
+{% include store-links.html app="oddball" %}
 
 Hundreds of characters wander around town, and they all look the same... except ONE. Can you spot the oddball?
 
@@ -50,4 +47,4 @@ Free to play with ads. Remove ads or get gems with in-app purchases.
 
 ## Support
 
-Questions or bug reports: [hfx.lab@gmail.com](mailto:hfx.lab@gmail.com) · [Privacy Policy]({{ '/privacy/' | relative_url }})
+Questions or bug reports: [hfx.lab@gmail.com](mailto:hfx.lab@gmail.com) · [Privacy Policy]({{ '/privacy/' | relative_url }}) · [Terms of Service]({{ '/terms/' | relative_url }})

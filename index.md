@@ -1,24 +1,31 @@
 ---
-title: Apps
-description: Small games and apps by HFX Lab.
+title:
+description: HFX Lab makes small, casual games for iPhone and Android.
 ---
 
-# HFX Lab
+<section class="intro">
+  <h1>HFX Lab</h1>
+  <p>Small, casual games for iPhone and Android. Easy to pick up, fun to come back to.</p>
+  <p class="muted" lang="ko">아이폰·안드로이드용 작은 캐주얼 게임을 만들어요.</p>
+</section>
 
-Small games and apps for iPhone and Android. 아이폰·안드로이드용 작은 게임과 앱을 만들어요.
+<h2>Apps</h2>
 
 <div class="app-list">
-<a class="app-card" href="{{ '/oddball/' | relative_url }}">
-<img src="{{ '/assets/img/oddball/icon.png' | relative_url }}" alt="" width="72" height="72">
-<div>
-<strong>Oddball: Spot the Odd One Out</strong>
-<span>이상한 녀석 찾기 · Find the one character that is different in a huge crowd.</span>
-</div>
-</a>
+{%- for app in site.data.apps %}
+{%- if app.page %}{% assign href = app.page | relative_url %}{% else %}{% assign href = app.google_play | default: app.app_store %}{% endif %}
+<article class="app-card">
+  <a class="app-icon" href="{{ href }}"><img src="{{ app.icon | relative_url }}" alt="{{ app.name.en }} icon" width="72" height="72"></a>
+  <div class="app-info">
+    <h3><a href="{{ href }}">{{ app.name.en }}</a></h3>
+    <p class="app-name-ko" lang="ko">{{ app.name.ko }}</p>
+    <p class="app-tagline">{{ app.tagline.en }}</p>
+    {% include store-links.html app=app.id %}
+  </div>
+</article>
+{%- endfor %}
 </div>
 
-## Contact
+<h2>Contact</h2>
 
 Questions, bug reports or privacy requests: [hfx.lab@gmail.com](mailto:hfx.lab@gmail.com)
-
-문의·버그 신고·개인정보 요청은 위 메일로 보내 주세요.

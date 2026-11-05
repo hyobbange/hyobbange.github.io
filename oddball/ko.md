@@ -16,10 +16,7 @@ image: /assets/img/oddball/icon.png
 
 <p class="lang-switch"><a href="{{ '/oddball/' | relative_url }}">English</a> · 한국어</p>
 
-<div class="store-links">
-  <a href="https://apps.apple.com/app/id6818129344">App Store</a>
-  <a href="https://play.google.com/store/apps/details?id=com.hfx.monsterhunt">Google Play</a>
-</div>
+{% include store-links.html app="oddball" %}
 
 마을을 가득 메운 수백 명의 캐릭터. 모두 똑같아 보이지만… 딱 한 명만 달라요. 이상한 녀석을 찾을 수 있나요?
 
@@ -51,4 +48,4 @@ image: /assets/img/oddball/icon.png
 
 ## 문의
 
-문의·버그 신고: [hfx.lab@gmail.com](mailto:hfx.lab@gmail.com) · [개인정보처리방침]({{ '/privacy/' | relative_url }})
+문의·버그 신고: [hfx.lab@gmail.com](mailto:hfx.lab@gmail.com) · [개인정보처리방침]({{ '/privacy/ko/' | relative_url }}) · [이용약관]({{ '/terms/ko/' | relative_url }})

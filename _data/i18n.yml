@@ -1,0 +1,31 @@
+# 화면 문구. 언어를 추가하면 여기에 같은 키로 한 덩어리를 더한다.
+en:
+  language_name: English
+  date_format: "%B %-d, %Y"
+  nav_apps: Apps
+  privacy: Privacy Policy
+  terms: Terms of Service
+  effective: Effective
+  current_note: This is the current version.
+  archived_note: This is a previous version.
+  period: In effect
+  until: to
+  present: present
+  view_current: View the current version
+  history: Version history
+  current_badge: current
+ko:
+  language_name: 한국어
+  date_format: "%Y년 %-m월 %-d일"
+  nav_apps: 앱
+  privacy: 개인정보처리방침
+  terms: 이용약관
+  effective: 시행일
+  current_note: 현재 적용 중인 버전이에요.
+  archived_note: 이전 버전이에요.
+  period: 적용 기간
+  until: "~"
+  present: 현재
+  view_current: 현재 버전 보기
+  history: 변경 이력
+  current_badge: 현재

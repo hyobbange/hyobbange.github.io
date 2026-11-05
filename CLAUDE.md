@@ -9,19 +9,29 @@ HFX Lab 공개 사이트. GitHub Pages(Jekyll)로 `main` 브랜치 루트를 그
 ## 구조
 | 경로 | 주소 | 내용 |
 |---|---|---|
-| `index.md` | `/` | 앱 목록 |
-| `privacy.md` | `/privacy/` | 모든 앱 공통 개인정보처리방침 (Google Sites 2025-07-03판을 옮김) |
+| `index.md` + `_data/apps.yml` | `/` | 소개 + 서비스 중인 앱 목록 (앱 목록은 `apps.yml`만 고친다) |
+| `_policies/<문서>/<언어>/<시행일>.md` | `/<문서>/<언어>/<시행일>/` | 개인정보처리방침(`privacy`)·이용약관(`terms`)의 버전별 원문. 한 번 게시한 버전은 고치지 않는다 |
+| `privacy/index.md`, `privacy/ko.md`, `terms/…` | `/privacy/`, `/privacy/ko/`, `/terms/`, `/terms/ko/` | 최신판. 같은 문서·언어에서 시행일이 가장 늦은 버전을 자동으로 보여 준다. 기본 주소는 영어 |
+| `_layouts/policy.html`, `_data/i18n.yml` | | 시행일·언어 전환·이전 버전 안내·변경 이력(적용 기간 자동 계산), 화면 문구 |
 | `oddball.md`, `oddball/ko.md` | `/oddball/`, `/oddball/ko/` | Oddball(이상한 녀석 찾기, `claude-apps/monster-hunt`) 소개 |
+| `_includes/store-links.html` | | `apps.yml`의 스토어 주소로 버튼 (비어 있으면 숨김) |
 | `404.md` | 없는 주소 | 안내 |
 | `app-ads.txt` | `/app-ads.txt` | AdMob 판매자 인증 (게시자 `pub-3395308029736797`) |
-| `_layouts/default.html`, `assets/style.css` | | 공통 틀·스타일 (밝은/어두운 모드) |
-| `assets/img/<앱>/` | | 앱 아이콘·스크린샷 (스토어 원본을 540px 폭으로 줄인 것) |
+| `CNAME` | | 커스텀 도메인. Settings → Pages에서 도메인을 넣으면 GitHub가 `main`에 직접 커밋한다. 지우지 않는다 |
+| `_layouts/default.html`, `assets/style.css` | | 공통 틀·스타일 (밝은/어두운 모드, 언어별 메뉴) |
+| `assets/img/<앱>/` | | 앱 아이콘·스크린샷 (스토어 원본을 줄인 것) |
+
+## 약관·방침 바꾸는 법
+- 새 버전 = 새 파일 `_policies/<문서>/<언어>/<새 시행일>.md` (front matter `doc`, `lang`, `version: "YYYY-MM-DD"`, `title`). 이전 파일은 그대로 둔다. 최신판·이력·적용 기간은 자동으로 바뀐다.
+- 언어 추가 = `_data/i18n.yml`에 언어 덩어리 + 버전 파일 + 최신판 페이지(`privacy/<언어>.md`, permalink `/privacy/<언어>/`).
+- 언어별 문서는 서로 번역본이 아닐 수 있다 (한글 방침은 2024년부터 따로 관리됨). 내용이 바뀌면 언어마다 버전을 따로 낸다.
+- 시행일은 사용자가 정한다. 이용약관은 시행 7일 전(불리한 변경은 30일 전) 게시를 약관에 약속해 두었다.
 
 ## 규칙
 - **공개 레포다.** 사이트에 실제로 보일 내용만 넣는다. 심사 연락처(전화번호), 광고·결제 계정 ID, 토큰, `claude-apps`의 내부 문서는 넣지 않는다.
 - 배포는 "Deploy from a branch"(`main` / root)로 GitHub가 푸시마다 자동으로 한다. 워크플로 파일은 만들지 않는다. `claude-apps`의 "Actions는 요청할 때만" 규칙과 달리, 이 레포에서는 푸시 = 배포가 정상이다. 그래서 `main`에는 확인한 것만 올린다.
 - 내부 링크·이미지는 `{{ '/경로' | relative_url }}`로 쓴다.
-- 새 앱 페이지: `<앱>.md`(permalink `/<앱>/`) + `assets/img/<앱>/` + `index.md`에 카드 추가. 문구는 `claude-apps/<앱 폴더>/store/` 등록정보를 바탕으로 맞춘다.
-- 방침을 고치면 맨 위 시행일과 10번 항목을 함께 고친다.
+- 새 앱 페이지: `<앱>.md`(permalink `/<앱>/`) + `assets/img/<앱>/` + `_data/apps.yml`에 항목 추가(`page` 채우기). 문구는 `claude-apps/<앱 폴더>/store/` 등록정보를 바탕으로 맞춘다.
+- 작업 브랜치는 최신 `main`에서 만든다 (GitHub가 `main`에 넣은 `CNAME` 커밋을 빠뜨리지 않게).
 - 로컬 확인: `jekyll build`(github-pages gem) 후 `_site/`를 열어 본다. `_site/`는 커밋하지 않는다.
 - 커밋 메시지는 `site: <내용>` 형식.

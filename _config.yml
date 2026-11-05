@@ -8,6 +8,15 @@ exclude:
   - CLAUDE.md
   - README.md
   - docs/
+
+# 개인정보처리방침·이용약관 버전 문서. _policies/<문서>/<언어>/<시행일>.md → /<문서>/<언어>/<시행일>/
+collections:
+  policies:
+    output: true
+    permalink: /:path/
+
 defaults:
   - scope: { path: "" }
     values: { layout: default }
+  - scope: { path: "", type: policies }
+    values: { layout: policy }
