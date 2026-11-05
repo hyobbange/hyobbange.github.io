@@ -25,8 +25,9 @@
     - 방침 한글 v4: 영문 v2에 맞춤. v3의 이용목적 뒤바뀜 바로잡음(Firebase → 앱 사용 통계 분석·광고 성과 측정, RevenueCat → 구매 여부 확인), 처리 항목·Apple Game Center·Google Play 게임·정보주체 권리·아동(만 14세) 추가
     - 방침 일어 v2: 영문 v2에 맞춤 (Firebase·구매 확인·게임 서비스·권리·아동·외국 이전). 일본어 원어민 검토 권장
     - 약관 영·한 v2: 제3조②가 없는 통지 조항(한글 "제27조 제1항", 영어 "Article 22")을 가리키던 것을 바로잡고 제23조(이용자에 대한 통지: 앱 안 공지·팝업·hfx.kr 게시) 추가
+- 2026-11-05 · 3단계 1~4: 도메인 인증 TXT, 가비아 DNS(A 4개·www CNAME·MX 유지), Custom domain 저장(`CNAME` 파일은 GitHub가 main에 커밋). Claude 확인: DNS 정상, `https://hfx.kr/`·`/privacy/`·`/privacy/ko/`·`/terms/`·`/app-ads.txt`(161줄)가 새 사이트로 응답. 이때 hfx.kr용 인증서는 아직 발급 전(`*.github.io` 인증서가 나옴) → 5번 대기
 - 2026-11-05 · `app-ads.txt`: 사용자가 준 현재 파일 161줄로 교체 (AdMob + 미디에이션 판매자)
-## 3단계: 도메인 연결 (목표 1·2) — 사용자 차례
+## 3단계: 도메인 연결 (목표 1·2) — 진행 중
 순서대로 한다. 1~2는 지금 해도 사이트에 영향 없음.
 
 1. [직접] **도메인 소유 인증** — GitHub 오른쪽 위 프로필 › Settings › Pages › "Add a domain" › `hfx.kr` 입력. 나오는 TXT 레코드(이름 `_github-pages-challenge-hyobbange`, 값은 화면에 나오는 문자열)를 가비아 DNS에 추가하고 Verify. 남이 내 도메인을 GitHub에 걸지 못하게 막는다
