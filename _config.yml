@@ -1,5 +1,6 @@
 # GitHub Pages(Jekyll) 설정. 푸시하면 GitHub가 main 브랜치를 그대로 빌드·배포한다.
 title: HFX Lab
+url: https://hfx.kr  # og:image 등 절대 주소에 쓰임
 description: Small games and apps by HFX Lab.
 contact_email: hfx.lab@gmail.com
 lang: en

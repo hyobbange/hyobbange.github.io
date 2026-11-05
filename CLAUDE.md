@@ -20,6 +20,7 @@ HFX Lab 공개 사이트. GitHub Pages(Jekyll)로 `main` 브랜치 루트를 그
 | `app-ads.txt` | `/app-ads.txt` | AdMob 판매자 인증 (게시자 `pub-3395308029736797`) |
 | `CNAME` | | 커스텀 도메인. Settings → Pages에서 도메인을 넣으면 GitHub가 `main`에 직접 커밋한다. 지우지 않는다 |
 | `_layouts/default.html`, `assets/style.css` | | 공통 틀·스타일 (밝은/어두운 모드, 언어별 메뉴) |
+| `assets/img/favicon.svg`, `assets/img/favicon-32.png`, `favicon.ico`, `apple-touch-icon.png`, `assets/img/og-default.png` | | 사이트 아이콘(흰 바탕 + 검정 HFX 글자, 2026-11-05 사용자 선택)·iPhone 홈 화면 아이콘·링크 미리보기 기본 그림. 글자 모양은 사용자가 준 HFX.svg 경로 |
 | `assets/img/<앱>/` | | 앱 아이콘·스크린샷 (스토어 원본을 줄인 것) |
 
 ## 약관·방침 바꾸는 법
