@@ -1,0 +1,103 @@
+---
+title: Privacy Policy
+permalink: /privacy/
+description: How HFX Lab apps collect, use, share and protect personal information.
+---
+
+# Privacy Policy
+
+<p class="muted">Effective July 3, 2025</p>
+
+HFX Lab ("we", "our", or "us") is committed to protecting your personal information. This Privacy Policy explains how we collect, use, share, and protect personal information, in accordance with the Personal Information Protection Act of Korea, as well as international standards such as the GDPR (EU), CCPA (US), and APPI (Japan), where applicable.
+
+This policy applies to all users of our mobile applications distributed globally via the App Store and Google Play.
+
+## 1. Purpose of Processing Personal Information
+
+We process personal information for the following purposes:
+
+- **Service Functionality:** To provide and operate app features.
+- **Personalized Advertising:** To deliver ads tailored to users' interests.
+- **Purchase Verification:** To confirm in-app purchases and manage user entitlements.
+- **Game Services Integration:** To provide access to Apple Game Center or Google Play Games services (leaderboards, achievements, cloud saves, etc.).
+
+## 2. Types of Data Collected
+
+Depending on the services you use, we may process the following data:
+
+- **Device Information:** Device ID, IP address, OS version, language settings
+- **App Usage Data:** Interaction logs, error/diagnostic reports
+- **Purchase Data:** In-app purchase receipts (via RevenueCat)
+- **Advertising Identifiers:** For ad targeting and measurement
+- **Game Progress & Achievements:** When using Game Center or Google Play Games
+
+We do not collect any personally identifiable information (PII) such as names, email addresses, or phone numbers directly from users.
+
+## 3. Third-Party Data Sharing
+
+We share user data with trusted third-party services only when necessary to provide functionality or fulfill legal obligations.
+
+<div class="table-wrap" markdown="1">
+
+| Third Party | Purpose | Data Shared | Retention Policy |
+|---|---|---|---|
+| Google | Personalized ads | Device ID, IP, app usage data, diagnostics | [Google Privacy Policy](https://policies.google.com/privacy) |
+| RevenueCat | Purchase verification | Purchase receipts | [RevenueCat Privacy Policy](https://www.revenuecat.com/privacy) |
+| Apple Game Center | Game services | Game-related IDs, achievements | [Apple Privacy Policy](https://www.apple.com/legal/privacy/) |
+| Google Play Games | Game services | Game-related data | [Google Privacy Policy](https://policies.google.com/privacy) |
+
+</div>
+
+We do not sell personal data.
+
+## 4. Legal Basis for Processing (GDPR)
+
+For users in the European Economic Area (EEA), we process personal data under the following lawful bases:
+
+- **Consent:** When you accept data tracking for ads.
+- **Performance of a Contract:** To deliver in-app purchases and core features.
+- **Legitimate Interests:** To improve our services, prevent fraud, and secure the app.
+
+You have the right to withdraw your consent at any time.
+
+## 5. User Rights
+
+Depending on your location, you may have the following rights regarding your personal data:
+
+- **Access:** Request a copy of your data.
+- **Rectification:** Request correction of inaccurate data.
+- **Erasure ("Right to be forgotten"):** Ask us to delete your data.
+- **Objection / Restriction:** Object to or restrict certain processing.
+- **Data Portability:** Receive your data in a transferable format.
+
+You can exercise these rights by contacting us at [hfx.lab@gmail.com](mailto:hfx.lab@gmail.com).
+
+## 6. Data Retention
+
+We do not store personal data directly on our servers.
+
+Third-party services may retain your data according to their policies. Please refer to:
+
+- [Google Data Retention](https://policies.google.com/technologies/retention)
+- [RevenueCat Privacy](https://www.revenuecat.com/privacy)
+
+## 7. International Data Transfers
+
+Our app may be used by users worldwide. As such, data may be processed outside your country, including in countries where data protection laws may differ. We ensure any such transfers are made in accordance with applicable legal requirements.
+
+## 8. Children's Privacy
+
+Our services are not intended for children under the age of 13, or the minimum age required by applicable law. We do not knowingly collect personal data from children.
+
+## 9. Contact Information (Data Protection Officer)
+
+- **Name:** HYOJUN JUNG
+- **Email:** [hfx.lab@gmail.com](mailto:hfx.lab@gmail.com)
+
+We will respond to your request in accordance with applicable laws and within a reasonable timeframe.
+
+## 10. Changes to This Privacy Policy
+
+This Privacy Policy is effective as of July 3, 2025. This is the first version of our Privacy Policy.
+
+Any future updates will be posted on this page, and previous versions will be available upon request.
