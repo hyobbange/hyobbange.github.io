@@ -80,6 +80,7 @@ img { max-width: 100%; height: auto; }
 .history { margin-top: 3em; padding-top: 8px; border-top: 1px solid var(--line); }
 .history h2 { font-size: 1.05rem; margin-top: 1em; }
 .history ul { padding-left: 20px; }
+.badge-next { background: var(--muted); }
 .badge { display: inline-block; margin-left: 6px; padding: 0 8px; border-radius: 999px; font-size: 0.8rem; background: var(--accent); color: var(--on-accent); }
 
 /* 앱 소개 */

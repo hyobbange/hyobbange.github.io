@@ -2,6 +2,11 @@
 {%- assign lang = page.lang | default: site.lang -%}
 {%- assign t = site.data.i18n[lang] | default: site.data.i18n.en -%}
 {%- if lang == "en" %}{% assign lang_path = "" %}{% else %}{% assign lang_path = lang | append: "/" %}{% endif %}
+{%- comment -%} 그 언어판이 없는 문서는 기본(영어) 주소로 {%- endcomment -%}
+{%- assign privacy_has = site.policies | where: "doc", "privacy" | where: "lang", lang | size -%}
+{%- assign terms_has = site.policies | where: "doc", "terms" | where: "lang", lang | size -%}
+{%- if privacy_has > 0 %}{% assign privacy_path = '/privacy/' | append: lang_path %}{% else %}{% assign privacy_path = '/privacy/' %}{% endif -%}
+{%- if terms_has > 0 %}{% assign terms_path = '/terms/' | append: lang_path %}{% else %}{% assign terms_path = '/terms/' %}{% endif -%}
 <html lang="{{ lang }}">
 <head>
   <meta charset="utf-8">
@@ -21,8 +26,8 @@
     <a class="brand" href="{{ '/' | relative_url }}">HFX Lab</a>
     <nav>
       <a href="{{ '/' | relative_url }}">{{ t.nav_apps }}</a>
-      <a href="{{ '/privacy/' | append: lang_path | relative_url }}">{{ t.privacy }}</a>
-      <a href="{{ '/terms/' | append: lang_path | relative_url }}">{{ t.terms }}</a>
+      <a href="{{ privacy_path | relative_url }}">{{ t.privacy }}</a>
+      <a href="{{ terms_path | relative_url }}">{{ t.terms }}</a>
     </nav>
   </header>
   <main class="content">
@@ -30,7 +35,7 @@
   </main>
   <footer class="site-footer">
     <p>© 2023 HFX Lab · <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></p>
-    <p><a href="{{ '/privacy/' | append: lang_path | relative_url }}">{{ t.privacy }}</a> · <a href="{{ '/terms/' | append: lang_path | relative_url }}">{{ t.terms }}</a></p>
+    <p><a href="{{ privacy_path | relative_url }}">{{ t.privacy }}</a> · <a href="{{ terms_path | relative_url }}">{{ t.terms }}</a></p>
   </footer>
 </body>
 </html>

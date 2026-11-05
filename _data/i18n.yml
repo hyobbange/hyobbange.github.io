@@ -1,4 +1,4 @@
-# 화면 문구. 언어를 추가하면 여기에 같은 키로 한 덩어리를 더한다.
+# 화면 문구. 언어를 추가하면 여기에 같은 키로 한 덩어리를 더한다. %DATE%는 날짜로 바뀐다.
 en:
   language_name: English
   date_format: "%B %-d, %Y"
@@ -6,14 +6,16 @@ en:
   privacy: Privacy Policy
   terms: Terms of Service
   effective: Effective
-  current_note: This is the current version.
   archived_note: This is a previous version.
-  period: In effect
+  upcoming_note: This version takes effect on %DATE%.
+  next_note: A new version takes effect on %DATE%.
+  preview: Preview
   until: to
   present: present
   view_current: View the current version
   history: Version history
   current_badge: current
+  upcoming_badge: upcoming
 ko:
   language_name: 한국어
   date_format: "%Y년 %-m월 %-d일"
@@ -21,11 +23,30 @@ ko:
   privacy: 개인정보처리방침
   terms: 이용약관
   effective: 시행일
-  current_note: 현재 적용 중인 버전이에요.
   archived_note: 이전 버전이에요.
-  period: 적용 기간
+  upcoming_note: "%DATE%부터 적용될 버전이에요."
+  next_note: "새 버전이 %DATE%부터 적용돼요."
+  preview: 미리 보기
   until: "~"
   present: 현재
   view_current: 현재 버전 보기
   history: 변경 이력
   current_badge: 현재
+  upcoming_badge: 예정
+ja:
+  language_name: 日本語
+  date_format: "%Y年%-m月%-d日"
+  nav_apps: アプリ
+  privacy: プライバシーポリシー
+  terms: 利用規約
+  effective: 施行日
+  archived_note: 以前のバージョンです。
+  upcoming_note: "%DATE%から適用されるバージョンです。"
+  next_note: "新しいバージョンが%DATE%から適用されます。"
+  preview: 内容を見る
+  until: "～"
+  present: 現在
+  view_current: 現在のバージョンを見る
+  history: 変更履歴
+  current_badge: 現在
+  upcoming_badge: 予定

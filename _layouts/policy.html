@@ -2,48 +2,40 @@
 layout: default
 ---
 {%- comment -%}
-버전 문서(_policies/...)를 그대로 보여 주거나, 최신판 페이지(privacy/index.md 등)에서
-같은 문서·언어의 가장 최근 시행일 버전을 골라 보여 준다.
+개인정보처리방침·이용약관 페이지.
+- 버전 문서(_policies/…)는 그 버전을, 최신판 페이지(privacy/index.md 등)는 "오늘 적용 중인" 버전을 보여 준다.
+- 시행일이 미래인 버전(예정)이 있으면 그 날짜 기준 화면을 하나 더 만들어 숨겨 두고,
+  방문자 시계(한국 시간)로 시행일이 지나면 스크립트가 바꿔 보여 준다. 다시 빌드하지 않아도 날짜에 맞게 바뀐다.
 {%- endcomment -%}
-{%- assign t = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
-{%- assign versions = site.policies | where: "doc", page.doc | where: "lang", page.lang | sort: "version" | reverse -%}
-{%- assign latest = versions | first -%}
-{%- if page.collection == "policies" -%}{%- assign current = page -%}{%- else -%}{%- assign current = latest -%}{%- endif -%}
-{%- assign all_docs = site.policies | where: "doc", page.doc | map: "lang" | uniq -%}
-{%- if page.lang == "en" %}{% assign self_path = "" %}{% else %}{% assign self_path = page.lang | append: "/" %}{% endif -%}
-{%- capture latest_url %}/{{ page.doc }}/{{ self_path }}{% endcapture -%}
+{%- assign build_ts = site.time | date: "%s" | plus: 32400 -%}
+{%- assign today = build_ts | date: "%Y-%m-%d" -%}
+{%- assign all = site.policies | where: "doc", page.doc | where: "lang", page.lang | sort: "version" -%}
+{%- assign future = all | where_exp: "v", "v.version > today" -%}
+{%- assign next = future | first -%}
+{%- if page.collection == "policies" -%}{%- assign shown_now = page -%}{%- assign shown_next = page -%}
+{%- else -%}
+  {%- assign effective = all | where_exp: "v", "v.version <= today" -%}
+  {%- assign shown_now = effective | last | default: next -%}
+  {%- assign shown_next = next -%}
+{%- endif -%}
 
-<h1>{{ t[page.doc] }}</h1>
-
-<p class="policy-meta">
-  {{ t.effective }}: {{ current.version | date: t.date_format }}
-  {%- if all_docs.size > 1 %} ·
-    {% for l in all_docs %}{% if l == page.lang %}<span>{{ site.data.i18n[l].language_name }}</span>{% else %}{% if l == "en" %}{% assign lp = "" %}{% else %}{% assign lp = l | append: "/" %}{% endif %}<a href="{{ '/' | append: page.doc | append: '/' | append: lp | relative_url }}" lang="{{ l }}">{{ site.data.i18n[l].language_name }}</a>{% endif %}{% unless forloop.last %} / {% endunless %}{% endfor %}
-  {%- endif %}
-</p>
-
-{% if current.url != latest.url -%}
-<p class="notice">{{ t.archived_note }} <a href="{{ latest_url | relative_url }}">{{ t.view_current }} →</a></p>
-{%- endif %}
-
-<div class="policy-body">
-{{ current.content }}
+<div class="policy-view" data-until="{{ next.version }}">
+{% include policy-view.html shown=shown_now as_of=today %}
 </div>
-
-<section class="history">
-  <h2>{{ t.history }}</h2>
-  <ul>
-  {%- for v in versions %}
-    {%- if forloop.first -%}{% assign end_text = t.present %}{%- else -%}
-      {%- assign prev_index = forloop.index0 | minus: 1 -%}
-      {%- assign newer = versions[prev_index] -%}
-      {%- assign end_ts = newer.version | date: "%s" | minus: 86400 -%}
-      {%- assign end_text = end_ts | date: t.date_format -%}
-    {%- endif %}
-    <li>
-      {% if v.url == current.url %}<strong>{% endif %}<a href="{{ v.url | relative_url }}">{{ v.version | date: t.date_format }} {{ t.until }} {{ end_text }}</a>{% if v.url == current.url %}</strong>{% endif %}
-      {% if forloop.first %}<span class="badge">{{ t.current_badge }}</span>{% endif %}
-    </li>
-  {%- endfor %}
-  </ul>
-</section>
+{%- if next %}
+<div class="policy-view" data-from="{{ next.version }}" hidden>
+{% include policy-view.html shown=shown_next as_of=next.version %}
+</div>
+<script>
+(function () {
+  var today = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10); // 한국 시간
+  document.querySelectorAll('.policy-view[data-from]').forEach(function (el) {
+    if (today >= el.getAttribute('data-from')) {
+      el.hidden = false;
+      var before = document.querySelector('.policy-view[data-until="' + el.getAttribute('data-from') + '"]');
+      if (before) before.hidden = true;
+    }
+  });
+})();
+</script>
+{%- endif %}

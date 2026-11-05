@@ -1,0 +1,54 @@
+{%- comment -%} include.shown: 보여 줄 버전 문서, include.as_of: 기준 날짜(YYYY-MM-DD) {%- endcomment -%}
+{%- assign shown = include.shown -%}
+{%- assign as_of = include.as_of -%}
+{%- assign t = site.data.i18n[shown.lang] | default: site.data.i18n.en -%}
+{%- assign versions = site.policies | where: "doc", shown.doc | where: "lang", shown.lang | sort: "version" | reverse -%}
+{%- assign in_effect = versions | where_exp: "v", "v.version <= as_of" -%}
+{%- assign current = in_effect | first -%}
+{%- assign upcoming_list = versions | where_exp: "v", "v.version > as_of" -%}
+{%- assign upcoming = upcoming_list | last -%}
+{%- if shown.lang == "en" %}{% assign lp = "" %}{% else %}{% assign lp = shown.lang | append: "/" %}{% endif -%}
+{%- capture latest_url %}/{{ shown.doc }}/{{ lp }}{% endcapture -%}
+{%- assign langs = site.policies | where: "doc", shown.doc | map: "lang" | uniq -%}
+
+<h1>{{ t[shown.doc] }}</h1>
+
+<p class="policy-meta">
+  {{ t.effective }}: {{ shown.version | date: t.date_format }}
+  {%- if langs.size > 1 %} ·
+    {% for l in langs %}{% if l == shown.lang %}<span>{{ site.data.i18n[l].language_name }}</span>{% else %}{% if l == "en" %}{% assign olp = "" %}{% else %}{% assign olp = l | append: "/" %}{% endif %}<a href="{{ '/' | append: shown.doc | append: '/' | append: olp | relative_url }}" lang="{{ l }}">{{ site.data.i18n[l].language_name }}</a>{% endif %}{% unless forloop.last %} / {% endunless %}{% endfor %}
+  {%- endif %}
+</p>
+
+{%- assign shown_date = shown.version | date: t.date_format -%}
+{%- if upcoming %}{% assign upcoming_date = upcoming.version | date: t.date_format %}{% endif -%}
+{% if shown.version > as_of -%}
+<p class="notice">{{ t.upcoming_note | replace: "%DATE%", shown_date }} <a href="{{ latest_url | relative_url }}">{{ t.view_current }} →</a></p>
+{%- elsif shown.url != current.url -%}
+<p class="notice">{{ t.archived_note }} <a href="{{ latest_url | relative_url }}">{{ t.view_current }} →</a></p>
+{%- elsif upcoming -%}
+<p class="notice">{{ t.next_note | replace: "%DATE%", upcoming_date }} <a href="{{ upcoming.url | relative_url }}">{{ t.preview }} →</a></p>
+{%- endif %}
+
+<div class="policy-body">
+{{ shown.content }}
+</div>
+
+<section class="history">
+  <h2>{{ t.history }}</h2>
+  <ul>
+  {%- for v in versions %}
+    {%- if forloop.first -%}
+      {%- if v.version > as_of %}{% assign end_text = "" %}{% else %}{% assign end_text = t.present %}{% endif -%}
+    {%- else -%}
+      {%- assign newer_index = forloop.index0 | minus: 1 -%}
+      {%- assign newer = versions[newer_index] -%}
+      {%- assign end_text = newer.version | date: "%s" | minus: 86400 | date: t.date_format -%}
+    {%- endif %}
+    <li>
+      {% if v.url == shown.url %}<strong>{% endif %}<a href="{{ v.url | relative_url }}">{{ v.version | date: t.date_format }} {{ t.until }} {{ end_text }}</a>{% if v.url == shown.url %}</strong>{% endif %}
+      {%- if v.url == current.url %} <span class="badge">{{ t.current_badge }}</span>{% elsif v.version > as_of %} <span class="badge badge-next">{{ t.upcoming_badge }}</span>{% endif %}
+    </li>
+  {%- endfor %}
+  </ul>
+</section>
