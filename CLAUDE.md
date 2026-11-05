@@ -13,7 +13,8 @@ HFX Lab 공개 사이트. GitHub Pages(Jekyll)로 `main` 브랜치 루트를 그
 | `_policies/<문서>/<언어>/<시행일>.md` | `/<문서>/<언어>/<시행일>/` | 개인정보처리방침(`privacy`)·이용약관(`terms`)의 버전별 원문. 한 번 게시한 버전은 고치지 않는다 |
 | `privacy/index.md`, `privacy/ko.md`, `privacy/ja.md`, `terms/…` | `/privacy/`, `/privacy/ko/`, `/privacy/ja/`, `/terms/`, `/terms/ko/` | 최신판. 같은 문서·언어에서 오늘(한국 시간) 적용 중인 버전을 보여 준다. 기본 주소는 영어. 그 언어판이 없는 문서는 메뉴가 영어판으로 연결 |
 | `_layouts/policy.html`, `_includes/policy-view.html`, `_data/i18n.yml` | | 시행일·언어 전환·이전/예정 버전 안내·변경 이력(적용 기간 자동 계산), 화면 문구 (en·ko·ja) |
-| `oddball.md`, `oddball/ko.md` | `/oddball/`, `/oddball/ko/` | Oddball(이상한 녀석 찾기, `claude-apps/monster-hunt`) 소개 |
+| `oddball.md`, `oddball/ko.md` | `/oddball/`, `/oddball/ko/` | Oddball(이상한 녀석 찾기, `claude-apps/monster-hunt`) 소개 (영·한) |
+| `keyring-gacha.md` | `/keyring-gacha/` | 키링 가챠(`claude-apps/keyring-gacha`) 소개. 앱·스토어가 한국어만이라 한국어 페이지 하나 |
 | `_includes/store-links.html` | | `apps.yml`의 스토어 주소로 버튼 (비어 있으면 숨김) |
 | `404.md` | 없는 주소 | 안내 |
 | `app-ads.txt` | `/app-ads.txt` | AdMob 판매자 인증 (게시자 `pub-3395308029736797`) |
