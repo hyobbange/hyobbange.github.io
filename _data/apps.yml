@@ -9,7 +9,7 @@
   icon: /assets/img/oddball/icon.png
   page: /oddball/
   google_play: https://play.google.com/store/apps/details?id=com.hfx.monsterhunt
-  app_store:  # 출시 뒤 https://apps.apple.com/app/id6818129344
+  app_store: https://apps.apple.com/app/id6818129344
 - id: keyring-gacha
   name: { en: "Keyring Gacha", ko: "키링 가챠" }
   tagline:
@@ -18,4 +18,4 @@
   icon: /assets/img/keyring-gacha/icon.png
   page: /keyring-gacha/
   google_play: https://play.google.com/store/apps/details?id=com.hfx.keyringgacha
-  app_store:  # 출시 뒤 https://apps.apple.com/app/id6824445587
+  app_store: https://apps.apple.com/app/id6824445587

@@ -27,6 +27,8 @@
     - 약관 영·한 v2: 제3조②가 없는 통지 조항(한글 "제27조 제1항", 영어 "Article 22")을 가리키던 것을 바로잡고 제23조(이용자에 대한 통지: 앱 안 공지·팝업·hfx.kr 게시) 추가
 - 2026-11-05 · 3단계 1~4: 도메인 인증 TXT, 가비아 DNS(A 4개·www CNAME·MX 유지), Custom domain 저장(`CNAME` 파일은 GitHub가 main에 커밋). Claude 확인: DNS 정상, `https://hfx.kr/`·`/privacy/`·`/privacy/ko/`·`/terms/`·`/app-ads.txt`(161줄)가 새 사이트로 응답. 인증서 발급·Enforce HTTPS(사용자) 뒤 다시 확인: `hfx.kr` Let's Encrypt 인증서(2027-02-03 만료, GitHub가 자동 갱신), 모든 페이지 200·없는 주소 404, MX 그대로
 - 2026-11-05 · `app-ads.txt`: 사용자가 준 현재 파일 161줄로 교체 (AdMob + 미디에이션 판매자)
+- 2026-11-06 · App Store 버튼: Oddball(`id6818129344`)·키링 가챠(`id6824445587`) iOS 출시 확인, `_data/apps.yml`에 넣음 (첫 화면 카드·앱 소개 페이지)
+
 ## 3단계: 도메인 연결 (목표 1·2) — 완료 (2026-11-05)
 순서대로 한다. 1~2는 지금 해도 사이트에 영향 없음.
 
