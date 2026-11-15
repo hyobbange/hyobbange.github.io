@@ -15,6 +15,9 @@ HFX Lab 공개 사이트. GitHub Pages(Jekyll)로 `main` 브랜치 루트를 그
 | `_layouts/policy.html`, `_includes/policy-view.html`, `_data/i18n.yml` | | 시행일·언어 전환·이전/예정 버전 안내·변경 이력(적용 기간 자동 계산), 화면 문구 (en·ko·ja) |
 | `oddball.md`, `oddball/ko.md` | `/oddball/`, `/oddball/ko/` | Oddball(이상한 녀석 찾기, `claude-apps/monster-hunt`) 소개 (영·한) |
 | `keyring-gacha.md` | `/keyring-gacha/` | 키링 가챠(`claude-apps/keyring-gacha`) 소개. 앱·스토어가 한국어만이라 한국어 페이지 하나 |
+| `lotto-box.md` | `/lotto-box/` | 로또 상자(`com.hfx.randombox`) 소개. 한국어만 |
+| `stock-honey.md`, `stock-honey/ko.md` | `/stock-honey/`, `/stock-honey/ko/` | 주식허니 계산기(`com.hbb.stockhoney`) 소개 (영·한) |
+| `levelbook.md`, `levelbook/ko.md` | `/levelbook/`, `/levelbook/ko/` | 야장 수첩, 레벨북(`loof.utils.levelbook`) 소개 (영·한) |
 | `_includes/store-links.html` | | `apps.yml`의 스토어 주소로 버튼 (비어 있으면 숨김) |
 | `404.md` | 없는 주소 | 안내 |
 | `app-ads.txt` | `/app-ads.txt` | AdMob 판매자 인증 (게시자 `pub-3395308029736797`) |
@@ -34,7 +37,8 @@ HFX Lab 공개 사이트. GitHub Pages(Jekyll)로 `main` 브랜치 루트를 그
 - **공개 레포다.** 사이트에 실제로 보일 내용만 넣는다. 심사 연락처(전화번호), 광고·결제 계정 ID, 토큰, `claude-apps`의 내부 문서는 넣지 않는다.
 - 배포는 "Deploy from a branch"(`main` / root)로 GitHub가 푸시마다 자동으로 한다. 워크플로 파일은 만들지 않는다. `claude-apps`의 "Actions는 요청할 때만" 규칙과 달리, 이 레포에서는 푸시 = 배포가 정상이다. 그래서 `main`에는 확인한 것만 올린다.
 - 내부 링크·이미지는 `{{ '/경로' | relative_url }}`로 쓴다.
-- 새 앱 페이지: `<앱>.md`(permalink `/<앱>/`) + `assets/img/<앱>/` + `_data/apps.yml`에 항목 추가(`page` 채우기). 문구는 `claude-apps/<앱 폴더>/store/` 등록정보를 바탕으로 맞춘다.
+- 새 앱 페이지: `<앱>.md`(permalink `/<앱>/`) + `assets/img/<앱>/` + `_data/apps.yml`에 항목 추가(`page` 채우기). front matter에 `app: <apps.yml id>`(아이폰 App Store 배너)와, 언어판이 있으면 `alternates: { en: …, ko: … }`(검색 엔진용 언어판 연결)를 넣는다. 문구는 `claude-apps/<앱 폴더>/store/` 등록정보를 바탕으로 맞춘다.
 - 작업 브랜치는 최신 `main`에서 만든다 (GitHub가 `main`에 넣은 `CNAME` 커밋을 빠뜨리지 않게).
+- 검색: `jekyll-sitemap`이 `/sitemap.xml`·`/robots.txt`를 만든다. 페이지마다 `title`·`description`을 검색 결과에 보일 문장으로 쓴다.
 - 로컬 확인: `jekyll build`(github-pages gem) 후 `_site/`를 열어 본다. `_site/`는 커밋하지 않는다.
 - 커밋 메시지는 `site: <내용>` 형식.

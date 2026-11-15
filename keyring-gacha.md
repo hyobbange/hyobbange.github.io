@@ -1,4 +1,5 @@
 ---
+app: keyring-gacha
 title: 키링 가챠
 permalink: /keyring-gacha/
 lang: ko

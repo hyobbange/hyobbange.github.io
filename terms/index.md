@@ -1,4 +1,5 @@
 ---
+alternates: { en: /terms/, ko: /terms/ko/ }
 doc: terms
 lang: en
 permalink: /terms/

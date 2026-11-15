@@ -19,3 +19,30 @@
   page: /keyring-gacha/
   google_play: https://play.google.com/store/apps/details?id=com.hfx.keyringgacha
   app_store: https://apps.apple.com/app/id6824445587
+- id: lotto-box
+  name: { en: "Lotto Box", ko: "로또 상자" }
+  tagline:
+    en: Open boxes and pick your own Lotto 6/45 and Pension Lottery 720+ numbers. (Korean only)
+    ko: 45개의 상자를 직접 열어 고르는 로또·연금복권 번호 생성기.
+  icon: /assets/img/lotto-box/icon.png
+  page: /lotto-box/
+  google_play: https://play.google.com/store/apps/details?id=com.hfx.randombox
+  app_store: https://apps.apple.com/app/id6743466428
+- id: stock-honey
+  name: { en: "Stock Honey Calculator", ko: "주식허니 계산기" }
+  tagline:
+    en: Average price, averaging-down table and profit calculators for stocks and crypto.
+    ko: 평단가·물타기 목록·수익 계산을 한 번에. 주식과 암호화폐에.
+  icon: /assets/img/stock-honey/icon.png
+  page: /stock-honey/
+  google_play: https://play.google.com/store/apps/details?id=com.hbb.stockhoney
+  app_store: https://apps.apple.com/app/id1612659909
+- id: levelbook
+  name: { en: "Surveying Leveling Field Notes", ko: "야장 수첩, 레벨북" }
+  tagline:
+    en: Height of instrument leveling field book with automatic calculation and checks.
+    ko: 기고식 야장 기입법의 자동 계산과 검산.
+  icon: /assets/img/levelbook/icon.png
+  page: /levelbook/
+  google_play: https://play.google.com/store/apps/details?id=loof.utils.levelbook
+  app_store: https://apps.apple.com/app/id1462164977

@@ -1,4 +1,6 @@
 ---
+app: oddball
+alternates: { en: /oddball/, ko: /oddball/ko/ }
 title: 이상한 녀석 찾기
 permalink: /oddball/ko/
 lang: ko

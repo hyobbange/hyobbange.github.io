@@ -1,12 +1,12 @@
 ---
 title:
-description: HFX Lab makes small, casual games for iPhone and Android.
+description: HFX Lab makes small games and handy tools for iPhone and Android, from puzzle games to stock and surveying calculators.
 ---
 
 <section class="intro">
   <h1>HFX Lab</h1>
-  <p>Small, casual games for iPhone and Android. Easy to pick up, fun to come back to.</p>
-  <p class="muted" lang="ko">아이폰·안드로이드용 작은 캐주얼 게임을 만들어요.</p>
+  <p>Small games and handy tools for iPhone and Android. Easy to pick up, useful to come back to.</p>
+  <p class="muted" lang="ko">아이폰·안드로이드용 작은 게임과 쓸모 있는 도구 앱을 만들어요.</p>
 </section>
 
 <h2>Apps</h2>

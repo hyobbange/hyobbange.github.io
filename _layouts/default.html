@@ -20,7 +20,18 @@
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:image" content="{{ page.image | default: '/assets/img/og-default.png' | absolute_url }}">
   <meta name="twitter:card" content="{% if page.image %}summary{% else %}summary_large_image{% endif %}">
-  {% if page.canonical %}<link rel="canonical" href="{{ page.canonical | absolute_url }}">{% endif %}
+  <link rel="canonical" href="{{ page.canonical | default: page.url | absolute_url }}">
+  {%- if page.alternates %}
+  {%- for alt in page.alternates %}
+  <link rel="alternate" hreflang="{{ alt[0] }}" href="{{ alt[1] | absolute_url }}">
+  {%- endfor %}
+  {%- if page.alternates.en %}
+  <link rel="alternate" hreflang="x-default" href="{{ page.alternates.en | absolute_url }}">
+  {%- endif %}
+  {%- endif %}
+  {%- if page.app %}{% assign this_app = site.data.apps | where: "id", page.app | first %}{% if this_app.app_store %}
+  <meta name="apple-itunes-app" content="app-id={{ this_app.app_store | split: '/id' | last }}">
+  {%- endif %}{% endif %}
   <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="icon" href="{{ '/assets/img/favicon-32.png' | relative_url }}" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">

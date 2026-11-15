@@ -1,4 +1,6 @@
 ---
+app: oddball
+alternates: { en: /oddball/, ko: /oddball/ko/ }
 title: "Oddball: Spot the Odd One Out"
 permalink: /oddball/
 description: Hundreds of characters look the same, except one. A relaxing hidden object and spot the difference game.

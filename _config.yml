@@ -5,6 +5,8 @@ description: Small games and apps by HFX Lab.
 contact_email: hfx.lab@gmail.com
 lang: en
 markdown: kramdown
+plugins:
+  - jekyll-sitemap   # /sitemap.xml, /robots.txt (GitHub Pages 기본 지원)
 exclude:
   - CLAUDE.md
   - README.md
