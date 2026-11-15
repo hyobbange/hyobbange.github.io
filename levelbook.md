@@ -22,6 +22,8 @@ image: /assets/img/levelbook/icon.png
 
 Supports automatic calculation and checking of the height of instrument (HI) method. Fill in the field book on site, and the app does the arithmetic.
 
+<p><a href="{{ '/levelbook/height-of-instrument/' | relative_url }}"><b>Guide: height of instrument method, step by step with an example →</b></a></p>
+
 <div class="shots">
   <img src="{{ '/assets/img/levelbook/en-fieldbook.jpg' | relative_url }}" alt="Field book table with BS, TP, IP, IH and GH columns and a check row" loading="lazy" width="540" height="1171">
   <img src="{{ '/assets/img/levelbook/en-list.jpg' | relative_url }}" alt="List of saved field books" loading="lazy" width="540" height="1171">

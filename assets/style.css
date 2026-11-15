@@ -142,3 +142,11 @@ th { background: var(--card); }
 .cta p { margin: 0 0 4px; }
 .cta .store-links { margin: 8px 0 0; }
 .formula { padding: 10px 14px; border-left: 3px solid var(--accent); background: var(--card); border-radius: 0 10px 10px 0; font-variant-numeric: tabular-nums; overflow-x: auto; }
+
+/* 야장 표 */
+.fieldbook { font-size: 0.9rem; font-variant-numeric: tabular-nums; margin: 4px 0; }
+.fieldbook th, .fieldbook td { text-align: right; padding: 6px 8px; white-space: nowrap; }
+.fieldbook th:first-child, .fieldbook td:first-child { text-align: center; }
+.fieldbook b { color: var(--accent); }
+.fieldbook .check td { background: var(--card); font-weight: 600; }
+.content table td:first-child, .content table th:first-child { white-space: nowrap; }
