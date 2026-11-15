@@ -78,5 +78,6 @@ DNS 변경이 퍼지는 동안(보통 몇 분~몇 시간) 일부 사람에게는
 - [x] [Claude] 주식허니: 웹 물타기·평단가 계산기 `/stock-honey/calculator/`·`/stock-honey/ko/calculator/` (2026-11-15). 계산식은 `hyobbange/stockhoney`의 cubit(avg·avg_list·profit)과 같게 `assets/js/stock-calc.js`로 옮김, 앱 스크린샷 숫자와 대조함. 공식·예시·FAQ를 함께 써서 첫 가이드 글 역할. 웹 전용: 평단가 간격을 비우면 자동(1·2·5 단위)
 - [x] [Claude] 야장 수첩 가이드 1: 기고식 야장 기입법 계산 방법과 예제 `/levelbook/ko/height-of-instrument/`·`/levelbook/height-of-instrument/` (2026-11-15). 예제는 앱 스크린샷 야장과 같은 숫자
 - [x] [Claude] 야장 수첩 웹 계산기 `/levelbook/ko/calculator/`·`/levelbook/calculator/` (2026-11-15). 앱 sheet_cubit 규칙(줄 상태별 입력 칸, 아래 줄 다시 계산, 줄 자동 추가, 검산)을 그대로 옮기고 정확한 소수 계산. 앱 스크린샷 예제와 같은 값·표시. 저장·CSV는 앱으로 넘김
+- [x] [Claude] 로또 상자 가이드 1: 연금복권 720+ 번호 구조와 당첨 등수·확률 `/lotto-box/pension-720/` (2026-11-15, 사용자 검토 후 게시). 출처 동행복권 pt720·lt645 소개
 - [ ] [Claude] 다음 가이드 후보: 승강식 야장 기입법 예제, 레벨 측량 오차·폐합 조정, 로또 상자(연금복권 720+ 구조·로또 번호 고르는 법), 주식허니(물타기 vs 불타기, 코인 평단가)
 - [ ] 4~8주 뒤 Search Console에서 "노출은 있는데 클릭 없는 검색어"로 다음 글 고르기

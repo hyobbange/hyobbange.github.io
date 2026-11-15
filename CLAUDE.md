@@ -16,6 +16,7 @@ HFX Lab 공개 사이트. GitHub Pages(Jekyll)로 `main` 브랜치 루트를 그
 | `oddball.md`, `oddball/ko.md` | `/oddball/`, `/oddball/ko/` | Oddball(이상한 녀석 찾기, `claude-apps/monster-hunt`) 소개 (영·한) |
 | `keyring-gacha.md` | `/keyring-gacha/` | 키링 가챠(`claude-apps/keyring-gacha`) 소개. 앱·스토어가 한국어만이라 한국어 페이지 하나 |
 | `lotto-box.md` | `/lotto-box/` | 로또 상자(`com.hfx.randombox`) 소개. 한국어만 |
+| `lotto-box/pension-720.md` | `/lotto-box/pension-720/` | 가이드: 연금복권 720+ 번호 구조·당첨 등수 (동행복권 공식 자료, 2026-11-15 확인) |
 | `stock-honey.md`, `stock-honey/ko.md` | `/stock-honey/`, `/stock-honey/ko/` | 주식허니 계산기(`com.hbb.stockhoney`, 소스 `hyobbange/stockhoney`) 소개 (영·한) |
 | `stock-honey/calculator.md`, `stock-honey/calculator-ko.md`, `_includes/stock-calc.html`, `assets/js/stock-calc.js`, `_data/stock_calc.yml` | `/stock-honey/calculator/`, `/stock-honey/ko/calculator/` | 웹 물타기·평단가·수익 계산기. 계산식은 앱 cubit과 같게 유지 (앱이 바뀌면 함께 고친다) |
 | `_includes/app-cta.html` | | 글 중간·끝의 앱 다운로드 상자 (`app`, `text`) |
@@ -43,6 +44,7 @@ HFX Lab 공개 사이트. GitHub Pages(Jekyll)로 `main` 브랜치 루트를 그
 - 내부 링크·이미지는 `{{ '/경로' | relative_url }}`로 쓴다.
 - 새 앱 페이지: `<앱>.md`(permalink `/<앱>/`) + `assets/img/<앱>/` + `_data/apps.yml`에 항목 추가(`page` 채우기). front matter에 `app: <apps.yml id>`(아이폰 App Store 배너)와, 언어판이 있으면 `alternates: { en: …, ko: … }`(검색 엔진용 언어판 연결)를 넣는다. 문구는 `claude-apps/<앱 폴더>/store/` 등록정보를 바탕으로 맞춘다.
 - 작업 브랜치는 최신 `main`에서 만든다 (GitHub가 `main`에 넣은 `CNAME` 커밋을 빠뜨리지 않게).
+- 가이드 글: 사용자가 Claude Docs 초안으로 검토한 뒤 올린다. 숫자는 공식 출처를 열어 확인하고 글에 출처 링크, front matter에 `last_modified_at`.
 - 검색: `jekyll-sitemap`이 `/sitemap.xml`·`/robots.txt`를 만든다. 페이지마다 `title`·`description`을 검색 결과에 보일 문장으로 쓴다.
 - 로컬 확인: `jekyll build`(github-pages gem) 후 `_site/`를 열어 본다. `_site/`는 커밋하지 않는다.
 - 커밋 메시지는 `site: <내용>` 형식.

@@ -171,3 +171,11 @@ th { background: var(--card); }
 .lb-table input { padding: 9px 3px; }
 .lb-table tfoot td { font-size: 0.8rem; padding: 8px 3px; white-space: nowrap; }
 .lb-table tfoot th { font-size: 0.8rem; text-align: center; }
+
+/* 마크다운 표: 휴대폰에서 넘치면 표 안에서만 옆으로 넘김 */
+.content > table, .policy-body > table { display: block; overflow-x: auto; max-width: 100%; }
+@media (max-width: 480px) { .content > table, .policy-body > table { font-size: 0.85rem; } .content > table th, .content > table td { padding: 6px 7px; } }
+.content > table td, .content > table th { min-width: 4.5em; }
+.content > table td:first-child, .content > table th:first-child { min-width: 0; }
+/* 한국어는 낱말 중간에서 줄바꿈하지 않기 */
+html:lang(ko) body, [lang="ko"] { word-break: keep-all; }

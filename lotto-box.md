@@ -23,6 +23,8 @@ image: /assets/img/lotto-box/icon.png
 45개의 상자 중 하나를 직접 열어 나만의 로또 번호를 뽑아 보세요!
 '로또 상자'는 내 손으로 직접 추첨하는 로또 번호 생성기이자 연금복권 번호 생성기예요.
 
+<p><a href="{{ '/lotto-box/pension-720/' | relative_url }}"><b>가이드: 연금복권 720+ 번호 구조와 당첨 등수·확률 →</b></a></p>
+
 <div class="shots">
   <img src="{{ '/assets/img/lotto-box/ko-boxes.jpg' | relative_url }}" alt="45개의 상자 중 하나를 골라 여는 로또 번호 추첨 화면" loading="lazy" width="540" height="1205">
   <img src="{{ '/assets/img/lotto-box/ko-lotto-result.jpg' | relative_url }}" alt="로또 번호 6개 추첨 완료 화면" loading="lazy" width="540" height="1205">
