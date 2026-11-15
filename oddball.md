@@ -3,7 +3,7 @@ app: oddball
 alternates: { en: /oddball/, ko: /oddball/ko/ }
 title: "Oddball: Spot the Odd One Out"
 permalink: /oddball/
-description: Hundreds of characters look the same, except one. A relaxing hidden object and spot the difference game.
+description: A hidden object game with a moving crowd. Hundreds of characters walk around town and hide behind buildings, and only one is different.
 image: /assets/img/oddball/icon.png
 ---
 
@@ -11,7 +11,7 @@ image: /assets/img/oddball/icon.png
   <img src="{{ '/assets/img/oddball/icon.png' | relative_url }}" alt="Oddball app icon" width="96" height="96">
   <div>
     <h1>Oddball</h1>
-    <p class="muted">Spot the Odd One Out</p>
+    <p class="muted">Spot the odd one out in a moving crowd</p>
   </div>
 </div>
 
@@ -19,7 +19,7 @@ image: /assets/img/oddball/icon.png
 
 {% include store-links.html app="oddball" %}
 
-Hundreds of characters wander around town, and they all look the same... except ONE. Can you spot the oddball?
+Unlike a still picture, this crowd **moves**: hundreds of characters walk around town and slip behind buildings and walls. They all look the same... except ONE. Turn the map, zoom in and spot the oddball.
 
 <p><a href="{{ '/oddball/tips/' | relative_url }}"><b>Guide: 7 tips to get better at hidden object and spot the difference games →</b></a></p>
 

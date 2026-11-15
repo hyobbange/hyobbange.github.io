@@ -4,8 +4,8 @@
 - id: oddball
   name: { en: "Oddball: Spot the Odd One Out", ko: "이상한 녀석 찾기" }
   tagline:
-    en: Hundreds of characters look the same. Find the one that is different.
-    ko: 수백 명 중 딱 한 명만 달라요. 숨은그림찾기와 다른그림찾기를 하나로.
+    en: A moving crowd of hundreds walks around town and hides behind buildings. Find the one that is different.
+    ko: 돌아다니고 건물 뒤에 숨는 수백 명의 군중. 그중 딱 한 명만 달라요.
   icon: /assets/img/oddball/icon.png
   page: /oddball/
   google_play: https://play.google.com/store/apps/details?id=com.hfx.monsterhunt

@@ -4,7 +4,7 @@ alternates: { en: /oddball/, ko: /oddball/ko/ }
 title: 이상한 녀석 찾기
 permalink: /oddball/ko/
 lang: ko
-description: 수백 명 중 딱 한 명만 달라요! 숨은그림찾기와 다른그림찾기를 합친 캐주얼 퍼즐 게임.
+description: 움직이는 군중 속 숨은그림찾기. 수백 명이 마을을 돌아다니고 건물 뒤에 숨어요. 그중 딱 한 명만 달라요!
 image: /assets/img/oddball/icon.png
 ---
 
@@ -12,7 +12,7 @@ image: /assets/img/oddball/icon.png
   <img src="{{ '/assets/img/oddball/icon.png' | relative_url }}" alt="이상한 녀석 찾기 앱 아이콘" width="96" height="96">
   <div>
     <h1>이상한 녀석 찾기</h1>
-    <p class="muted">숨은그림찾기 · 다른그림찾기</p>
+    <p class="muted">움직이는 군중 속 숨은그림찾기</p>
   </div>
 </div>
 
@@ -20,7 +20,7 @@ image: /assets/img/oddball/icon.png
 
 {% include store-links.html app="oddball" %}
 
-마을을 가득 메운 수백 명의 캐릭터. 모두 똑같아 보이지만… 딱 한 명만 달라요. 이상한 녀석을 찾을 수 있나요?
+멈춘 그림이 아니에요. 수백 명의 캐릭터가 **마을을 돌아다니고 건물과 벽 뒤로 숨어요.** 모두 똑같아 보이지만… 딱 한 명만 달라요. 맵을 돌리고 확대해 가며 이상한 녀석을 찾아보세요.
 
 <p><a href="{{ '/oddball/ko/tips/' | relative_url }}"><b>가이드: 숨은그림찾기·다른그림찾기 잘하는 요령 7가지 →</b></a></p>
 
