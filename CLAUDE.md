@@ -19,7 +19,9 @@ HFX Lab 공개 사이트. GitHub Pages(Jekyll)로 `main` 브랜치 루트를 그
 | `stock-honey.md`, `stock-honey/ko.md` | `/stock-honey/`, `/stock-honey/ko/` | 주식허니 계산기(`com.hbb.stockhoney`, 소스 `hyobbange/stockhoney`) 소개 (영·한) |
 | `stock-honey/calculator.md`, `stock-honey/calculator-ko.md`, `_includes/stock-calc.html`, `assets/js/stock-calc.js`, `_data/stock_calc.yml` | `/stock-honey/calculator/`, `/stock-honey/ko/calculator/` | 웹 물타기·평단가·수익 계산기. 계산식은 앱 cubit과 같게 유지 (앱이 바뀌면 함께 고친다) |
 | `_includes/app-cta.html` | | 글 중간·끝의 앱 다운로드 상자 (`app`, `text`) |
-| `levelbook.md`, `levelbook/ko.md` | `/levelbook/`, `/levelbook/ko/` | 야장 수첩, 레벨북(`loof.utils.levelbook`) 소개 (영·한) |
+| `levelbook.md`, `levelbook/ko.md` | `/levelbook/`, `/levelbook/ko/` | 야장 수첩, 레벨북(`loof.utils.levelbook`, 소스 `hyobbange/levelbook`) 소개 (영·한) |
+| `levelbook/height-of-instrument*.md` | `/levelbook/height-of-instrument/`, `/levelbook/ko/height-of-instrument/` | 가이드: 기고식 야장 기입법 예제 (영·한) |
+| `levelbook/calculator*.md`, `_includes/levelbook-calc.html`, `assets/js/levelbook-calc.js` | `/levelbook/calculator/`, `/levelbook/ko/calculator/` | 웹 기고식 야장 계산기. 줄 상태·계산·검산은 앱 `lib/page/sheet/cubit/sheet_cubit.dart`와 같게, 소수는 정확 계산(BigInt). 앱이 바뀌면 함께 고친다 |
 | `_includes/store-links.html` | | `apps.yml`의 스토어 주소로 버튼 (비어 있으면 숨김) |
 | `404.md` | 없는 주소 | 안내 |
 | `app-ads.txt` | `/app-ads.txt` | AdMob 판매자 인증 (게시자 `pub-3395308029736797`) |

@@ -150,3 +150,24 @@ th { background: var(--card); }
 .fieldbook b { color: var(--accent); }
 .fieldbook .check td { background: var(--card); font-weight: 600; }
 .content table td:first-child, .content table th:first-child { white-space: nowrap; }
+
+/* 야장 계산기 */
+.lb-table { margin: 0; background: var(--bg); font-variant-numeric: tabular-nums; table-layout: fixed; width: 100%; }
+.lb-table th, .lb-table td { padding: 0; text-align: center; font-size: 0.85rem; }
+.lb-table thead th { padding: 6px 2px; }
+.lb-table tbody th, .lb-table tfoot th { width: 2.6em; font-weight: 600; color: var(--muted); padding: 0 2px; }
+.lb-table input { width: 100%; border: 0; border-radius: 0; padding: 9px 4px; text-align: right; font: inherit; font-size: 0.9rem; background: transparent; color: var(--fg); }
+.lb-table input:focus { outline: 2px solid var(--accent); outline-offset: -2px; }
+.lb-table input.lb-locked { background: var(--card); color: var(--muted); }
+.lb-table td.lb-out { text-align: right; padding: 0 6px; color: var(--accent); font-weight: 600; background: var(--card); }
+.lb-table tfoot td, .lb-table tfoot th { padding: 8px 4px; text-align: right; background: var(--card); font-weight: 600; }
+.lb-table tfoot tr.ok td:nth-child(5) { color: #1a7f37; } .lb-table tfoot tr.bad td:nth-child(5) { color: #d92d20; }
+.lb-result { margin: 10px 0 0; font-size: 0.92rem; }
+.lb-result.ok { color: #1a7f37; font-weight: 600; } .lb-result.bad { color: #d92d20; font-weight: 600; }
+@media (prefers-color-scheme: dark) { .lb-result.ok, .lb-table tfoot tr.ok td:nth-child(5) { color: #56d364; } .lb-result.bad, .lb-table tfoot tr.bad td:nth-child(5) { color: #ff7a6e; } }
+.lb-table th, .lb-table td { vertical-align: middle; }
+.lb-table thead th:first-child, .lb-table tbody th, .lb-table tfoot th { width: 13%; }
+.lb-table td.lb-out { white-space: nowrap; padding: 0 4px; font-size: 0.85rem; }
+.lb-table input { padding: 9px 3px; }
+.lb-table tfoot td { font-size: 0.8rem; padding: 8px 3px; white-space: nowrap; }
+.lb-table tfoot th { font-size: 0.8rem; text-align: center; }

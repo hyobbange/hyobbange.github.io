@@ -67,6 +67,8 @@ image: /assets/img/levelbook/icon.png
 - 측점 5 (중간점): GH = 10.93 − 0.74 = **10.19**
 - 측점 6 (이기점): GH = 10.93 − 0.33 = **10.60**
 
+<p><a href="{{ '/levelbook/ko/calculator/' | relative_url }}"><b>이 예제를 웹 계산기에서 직접 넣어 보기 →</b></a></p>
+
 ## 검산하는 법
 
 <p class="formula">ΣBS − ΣTP = 마지막 지반고 − 처음 지반고</p>

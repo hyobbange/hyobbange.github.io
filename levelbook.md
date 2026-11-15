@@ -22,6 +22,8 @@ image: /assets/img/levelbook/icon.png
 
 Supports automatic calculation and checking of the height of instrument (HI) method. Fill in the field book on site, and the app does the arithmetic.
 
+<p><a href="{{ '/levelbook/calculator/' | relative_url }}"><b>Try the leveling calculator on the web →</b></a></p>
+
 <p><a href="{{ '/levelbook/height-of-instrument/' | relative_url }}"><b>Guide: height of instrument method, step by step with an example →</b></a></p>
 
 <div class="shots">

@@ -67,6 +67,8 @@ A turning point has **both a foresight (TP) and a backsight (BS) on the same lin
 - Point 5 (intermediate): GH = 10.93 − 0.74 = **10.19**
 - Point 6 (turning point): GH = 10.93 − 0.33 = **10.60**
 
+<p><a href="{{ '/levelbook/calculator/' | relative_url }}"><b>Try this example in the web calculator →</b></a></p>
+
 ## How to check the field book
 
 <p class="formula">ΣBS − ΣTP = last ground height − first ground height</p>

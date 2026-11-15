@@ -1,0 +1,20 @@
+{%- comment -%} 야장 수첩 웹 계산기. include.lang: en|ko {%- endcomment -%}
+{%- if include.lang == "ko" -%}
+{%- capture labels -%}{"no":"측점","cols":{"1":"후시 BS","2":"이기점 TP","3":"중간점 IP","5":"지반고 GH"},"check":"검산","ok":"성공","fail":"실패","result":"검산 %S: ΣBS − ΣTP = %L, 마지막 GH − 첫 GH = %R","hint":"첫 줄에 BS와 GH(기준 높이)를 넣고 시작하세요."}{%- endcapture -%}
+{%- else -%}
+{%- capture labels -%}{"no":"Point","cols":{"1":"Backsight BS","2":"Turning point TP","3":"Intermediate point IP","5":"Ground height GH"},"check":"Check","ok":"TRUE","fail":"FALSE","result":"Check %S: ΣBS − ΣTP = %L, last GH − first GH = %R","hint":"Start with BS and GH (known height) on the first line."}{%- endcapture -%}
+{%- endif -%}
+<div id="levelbook-calc" class="calc lb-calc" data-labels='{{ labels | strip }}' data-example='[[0,"bs","0.8"],[0,"gh","11"],[1,"ip","1.33"],[2,"ip","1.42"],[3,"tp","2.43"],[3,"bs","1.56"],[4,"ip","0.74"],[5,"tp","0.33"]]'>
+  <div class="table-scroll"><table class="lb-table">
+    <thead><tr><th scope="col">{% if include.lang == "ko" %}측점{% else %}No{% endif %}</th><th scope="col">BS</th><th scope="col">TP</th><th scope="col">IP</th><th scope="col">IH</th><th scope="col">GH</th></tr></thead>
+    <tbody></tbody>
+    <tfoot></tfoot>
+  </table></div>
+  <p class="lb-result" aria-live="polite"></p>
+  <div class="calc-foot">
+    <button type="button" class="calc-example" data-action="example">{% if include.lang == "ko" %}예제 넣어 보기{% else %}Try the example{% endif %}</button>
+    <button type="button" class="calc-example" data-action="clear">{% if include.lang == "ko" %}모두 지우기{% else %}Clear{% endif %}</button>
+  </div>
+  <p class="calc-hint">{% if include.lang == "ko" %}회색 칸은 그 줄에서 계산되는 값이에요. 입력한 값은 저장되지 않아요.{% else %}Gray cells are calculated for that line. Nothing you enter is saved.{% endif %}</p>
+</div>
+<script src="{{ '/assets/js/levelbook-calc.js' | relative_url }}" defer></script>
