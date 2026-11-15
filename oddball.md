@@ -21,6 +21,8 @@ image: /assets/img/oddball/icon.png
 
 Hundreds of characters wander around town, and they all look the same... except ONE. Can you spot the oddball?
 
+<p><a href="{{ '/oddball/tips/' | relative_url }}"><b>Guide: 7 tips to get better at hidden object and spot the difference games →</b></a></p>
+
 <div class="shots">
   <img src="{{ '/assets/img/oddball/en-1-packs.jpg' | relative_url }}" alt="Pack selection screen" loading="lazy" width="540" height="1080">
   <img src="{{ '/assets/img/oddball/en-2-village.jpg' | relative_url }}" alt="A crowd in the village map" loading="lazy" width="540" height="1080">
