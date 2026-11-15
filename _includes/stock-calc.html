@@ -1,0 +1,65 @@
+{%- comment -%} 주식허니 웹 계산기. include.lang: en|ko, include.tab: avg|list|profit (처음 열 탭), include.example: 예시 값 JSON {%- endcomment -%}
+{%- assign c = site.data.stock_calc[include.lang] -%}
+{%- assign first = include.tab | default: "avg" -%}
+<div id="stock-calc" class="calc" data-locale="{% if include.lang == 'ko' %}ko-KR{% else %}en-US{% endif %}">
+  <div class="calc-tabs" role="tablist">
+    <button type="button" role="tab" data-tab="avg" aria-selected="{% if first == 'avg' %}true{% else %}false{% endif %}">{{ c.tab_avg }}</button>
+    <button type="button" role="tab" data-tab="list" aria-selected="{% if first == 'list' %}true{% else %}false{% endif %}">{{ c.tab_list }}</button>
+    <button type="button" role="tab" data-tab="profit" aria-selected="{% if first == 'profit' %}true{% else %}false{% endif %}">{{ c.tab_profit }}</button>
+  </div>
+
+  <div id="panel-avg" role="tabpanel" {% unless first == 'avg' %}hidden{% endunless %}>
+    <fieldset><legend>{{ c.owned }}</legend>
+      <label>{{ c.price }}<input id="avg-own-price" data-own="price" inputmode="decimal" autocomplete="off"></label>
+      <label>{{ c.number }}<input id="avg-own-number" data-own="number" inputmode="decimal" autocomplete="off"></label>
+    </fieldset>
+    <fieldset><legend>{{ c.will_buy }}</legend>
+      <label>{{ c.price }}<input id="avg-buy-price" data-buy="price" inputmode="decimal" autocomplete="off"></label>
+      <label>{{ c.number }}<input id="avg-buy-number" inputmode="decimal" autocomplete="off"></label>
+    </fieldset>
+    <div class="calc-result">
+      <div><span>{{ c.avg_price }}</span><strong id="avg-out-price" class="calc-value big">–</strong></div>
+      <div><span>{{ c.total_number }}</span><strong id="avg-out-number" class="calc-value">–</strong></div>
+      <div><span>{{ c.total_cost }}</span><strong id="avg-out-cost" class="calc-value">–</strong></div>
+    </div>
+  </div>
+
+  <div id="panel-list" role="tabpanel" {% unless first == 'list' %}hidden{% endunless %}>
+    <fieldset><legend>{{ c.owned }}</legend>
+      <label>{{ c.price }}<input id="list-own-price" data-own="price" inputmode="decimal" autocomplete="off"></label>
+      <label>{{ c.number }}<input id="list-own-number" data-own="number" inputmode="decimal" autocomplete="off"></label>
+    </fieldset>
+    <fieldset><legend>{{ c.will_buy }}</legend>
+      <label>{{ c.target_price }}<input id="list-buy-price" data-buy="price" inputmode="decimal" autocomplete="off"></label>
+      <label>{{ c.diff }}<input id="list-diff" inputmode="decimal" autocomplete="off" aria-describedby="list-diff-hint"></label>
+      <label>{{ c.sort }}<select id="list-sort"><option value="owned">{{ c.sort_owned }}</option><option value="buy">{{ c.sort_buy }}</option></select></label>
+    </fieldset>
+    <p id="list-diff-hint" class="calc-hint">{{ c.diff_hint }}</p>
+    <div class="table-scroll"><table class="calc-table">
+      <thead><tr><th>{{ c.col_number }}</th><th>{{ c.col_cost }}</th><th>{{ c.col_price }}</th></tr></thead>
+      <tbody id="list-body"></tbody>
+    </table></div>
+    <p id="list-empty" class="calc-hint">{{ c.list_empty }}</p>
+  </div>
+
+  <div id="panel-profit" role="tabpanel" {% unless first == 'profit' %}hidden{% endunless %}>
+    <fieldset><legend>{{ c.owned }}</legend>
+      <label>{{ c.price }}<input id="profit-own-price" data-own="price" inputmode="decimal" autocomplete="off"></label>
+      <label>{{ c.number }}<input id="profit-own-number" data-own="number" inputmode="decimal" autocomplete="off"></label>
+    </fieldset>
+    <fieldset><legend>{{ c.will_sell }}</legend>
+      <label>{{ c.price }}<input id="profit-sell-price" inputmode="decimal" autocomplete="off"></label>
+    </fieldset>
+    <div class="calc-result">
+      <div><span>{{ c.net_profit }}</span><strong id="profit-out-net" class="calc-value big">–</strong></div>
+      <div><span>{{ c.rate }}</span><strong id="profit-out-rate" class="calc-value">–</strong></div>
+    </div>
+  </div>
+
+  <div class="calc-foot">
+    <label class="calc-digits">{{ c.digits }} <select id="calc-digits"><option value="0">0</option><option value="1">1</option><option value="2" selected>2</option><option value="4">4</option><option value="8">8</option></select></label>
+    {% if include.example %}<button type="button" class="calc-example" data-example='{{ include.example }}'>{{ c.example }}</button>{% endif %}
+  </div>
+  <p class="calc-hint">{{ c.note }}</p>
+</div>
+<script src="{{ '/assets/js/stock-calc.js' | relative_url }}" defer></script>

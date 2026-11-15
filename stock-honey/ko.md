@@ -22,6 +22,8 @@ image: /assets/img/stock-honey/icon.png
 
 주식허니 계산기 모음은 주식이나 암호화폐를 거래할 때 유용하게 쓸 수 있어요. 사기 전에 평단가를 미리 알아보고, 원하는 평단가에 맞는 투자금을 찾아보세요.
 
+<p><a href="{{ '/stock-honey/ko/calculator/' | relative_url }}"><b>웹에서 바로 쓰는 물타기 계산기 →</b></a></p>
+
 <div class="shots">
   <img src="{{ '/assets/img/stock-honey/ko-avg.jpg' | relative_url }}" alt="평단가 계산 화면" loading="lazy" width="540" height="960">
   <img src="{{ '/assets/img/stock-honey/ko-avg-list.jpg' | relative_url }}" alt="평단가별 필요 주식 수와 필요 비용을 보여 주는 평단가 목록 화면" loading="lazy" width="540" height="960">

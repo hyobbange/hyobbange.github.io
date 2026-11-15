@@ -22,6 +22,8 @@ image: /assets/img/stock-honey/icon.png
 
 A collection of calculators for trading stocks or cryptocurrencies. See your new average price before you buy, and find how much to invest to reach the average you want.
 
+<p><a href="{{ '/stock-honey/calculator/' | relative_url }}"><b>Try the average down calculator on the web →</b></a></p>
+
 <div class="shots">
   <img src="{{ '/assets/img/stock-honey/en-avg.jpg' | relative_url }}" alt="Average share price calculator screen" loading="lazy" width="540" height="960">
   <img src="{{ '/assets/img/stock-honey/en-avg-list.jpg' | relative_url }}" alt="Average price list showing required shares and cost for each target price" loading="lazy" width="540" height="960">

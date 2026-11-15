@@ -74,6 +74,6 @@ DNS 변경이 퍼지는 동안(보통 몇 분~몇 시간) 일부 사람에게는
 
 ## 5단계: 검색 유입 (주식허니·로또 상자·야장 수첩, 2026-11-15 시작)
 - [ ] [직접] Google Search Console에 `hfx.kr` 등록 (도메인 속성, 가비아 TXT) → 사이트맵 `https://hfx.kr/sitemap.xml` 제출
-- [ ] [Claude] 주식허니: 웹 물타기·평단가 계산기 페이지 (계산식은 앱과 같게)
+- [x] [Claude] 주식허니: 웹 물타기·평단가 계산기 `/stock-honey/calculator/`·`/stock-honey/ko/calculator/` (2026-11-15). 계산식은 `hyobbange/stockhoney`의 cubit(avg·avg_list·profit)과 같게 `assets/js/stock-calc.js`로 옮김, 앱 스크린샷 숫자와 대조함. 공식·예시·FAQ를 함께 써서 첫 가이드 글 역할. 웹 전용: 평단가 간격을 비우면 자동(1·2·5 단위)
 - [ ] [Claude] 앱별 첫 가이드 글 주제 5개 → 글 작성
 - [ ] 4~8주 뒤 Search Console에서 "노출은 있는데 클릭 없는 검색어"로 다음 글 고르기

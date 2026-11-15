@@ -1,0 +1,9 @@
+{%- comment -%} 앱으로 넘기는 상자. include.app: apps.yml id, include.text: 한 줄 문구 {%- endcomment -%}
+{%- assign a = site.data.apps | where: "id", include.app | first -%}
+<aside class="cta">
+  <img src="{{ a.icon | relative_url }}" alt="" width="56" height="56">
+  <div>
+    <p>{{ include.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>
+    {% include store-links.html app=include.app %}
+  </div>
+</aside>

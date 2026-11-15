@@ -1,0 +1,57 @@
+# 주식허니 웹 계산기 화면 문구 (앱 assets/translations에 맞춤)
+en:
+  tab_avg: Average price
+  tab_list: Averaging down list
+  tab_profit: Profit
+  owned: Your shares
+  will_buy: Will buy
+  will_sell: Will sell
+  price: Price per share
+  number: Number of shares
+  results: Result
+  avg_price: Average price
+  total_number: Total shares
+  total_cost: Total cost
+  target_price: Buy price
+  diff: Step between averages
+  diff_hint: Leave empty to choose automatically
+  sort: Order
+  sort_owned: Closest to your price first
+  sort_buy: Closest to buy price first
+  col_number: Required shares
+  col_cost: Required cost
+  col_price: Average price
+  list_empty: Enter your shares and the buy price to see the list.
+  net_profit: Net profit
+  rate: Rate of return
+  digits: Decimal places
+  example: Try an example
+  note: Fees and taxes are not included. This is a calculator, not investment advice.
+ko:
+  tab_avg: 평단가
+  tab_list: 물타기 목록
+  tab_profit: 수익
+  owned: 보유한 주식
+  will_buy: 매수할 주식
+  will_sell: 매도할 가격
+  price: 주식 평균 가격
+  number: 주식 수
+  results: 결과
+  avg_price: 평단가
+  total_number: 전체 주식 수
+  total_cost: 총 비용
+  target_price: 매수할 가격
+  diff: 평단가 간격
+  diff_hint: 비워 두면 자동으로 골라요
+  sort: 순서
+  sort_owned: 보유가에 가까운 순
+  sort_buy: 매수가에 가까운 순
+  col_number: 필요 주식 수
+  col_cost: 필요 비용
+  col_price: 평단가
+  list_empty: 보유한 주식과 매수할 가격을 넣으면 목록이 나와요.
+  net_profit: 순이익
+  rate: 수익률
+  digits: 소수점 자릿수
+  example: 예시 넣어 보기
+  note: 수수료와 세금은 빠져 있어요. 투자 조언이 아닌 계산 도구예요.
