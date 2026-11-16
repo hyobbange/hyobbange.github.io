@@ -28,6 +28,16 @@
   page: /lotto-box/
   google_play: https://play.google.com/store/apps/details?id=com.hfx.randombox
   app_store: https://apps.apple.com/app/id6743466428
+- id: loto-box
+  name: { en: "Loto Box: Japan Lottery Numbers", ko: "로토의 상자 (일본 복권 번호)", ja: "ロトの箱" }
+  tagline:
+    en: Pick numbers for Japan's LOTO7, LOTO6, MINI LOTO, BINGO5 and NUMBERS by opening boxes and spinning a wheel. (Japanese only)
+    ko: 상자를 열고 돌림판에 공을 쏘아 일본 로또7·로또6·넘버스 번호를 뽑아요. (일본어)
+    ja: 箱を開けて、回る円盤にボールを当てて。ロト7・ロト6・ミニロト・ビンゴ5・ナンバーズの番号を選ぶアプリ。
+  icon: /assets/img/loto-box/icon.png
+  page: /loto-box/
+  google_play: https://play.google.com/store/apps/details?id=com.hfx.lotobox
+  app_store: https://apps.apple.com/app/id6746829601
 - id: stock-honey
   name: { en: "Stock Honey Calculator", ko: "주식허니 계산기" }
   tagline:

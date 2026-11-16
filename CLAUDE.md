@@ -18,6 +18,8 @@ HFX Lab 공개 사이트. GitHub Pages(Jekyll)로 `main` 브랜치 루트를 그
 | `keyring-gacha.md` | `/keyring-gacha/` | 키링 가챠(`claude-apps/keyring-gacha`) 소개. 앱·스토어가 한국어만이라 한국어 페이지 하나 |
 | `lotto-box.md` | `/lotto-box/` | 로또 상자(`com.hfx.randombox`) 소개. 한국어만 |
 | `lotto-box/pension-720.md` | `/lotto-box/pension-720/` | 가이드: 연금복권 720+ 번호 구조·당첨 등수 (동행복권 공식 자료, 2026-11-15 확인) |
+| `loto-box.md` | `/loto-box/` | ロトの箱(`com.hfx.lotobox`, 소스 `hyobbange/loto_box`) 소개. 앱·스토어가 일본어만이라 일본어 페이지 하나 |
+| `loto-box/compare.md` | `/loto-box/compare/` | 가이드: 일본 숫자 선택식 복권 6종 비교 (宝くじ公式サイト 기준, 2026-11-16 확인. 공식 사이트가 작업 환경에서 봇 차단이라 공식 도메인 검색 + 계산으로 확인) |
 | `stock-honey.md`, `stock-honey/ko.md` | `/stock-honey/`, `/stock-honey/ko/` | 주식허니 계산기(`com.hbb.stockhoney`, 소스 `hyobbange/stockhoney`) 소개 (영·한) |
 | `stock-honey/calculator.md`, `stock-honey/calculator-ko.md`, `_includes/stock-calc.html`, `assets/js/stock-calc.js`, `_data/stock_calc.yml` | `/stock-honey/calculator/`, `/stock-honey/ko/calculator/` | 웹 물타기·평단가·수익 계산기. 계산식은 앱 cubit과 같게 유지 (앱이 바뀌면 함께 고친다) |
 | `_includes/app-cta.html` | | 글 중간·끝의 앱 다운로드 상자 (`app`, `text`) |
