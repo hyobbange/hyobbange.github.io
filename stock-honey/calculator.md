@@ -45,6 +45,8 @@ The closer your target is to the buy price, the faster the number of shares grow
 
 Yes. If the buy price is above your average, the list shows how your average **rises** as you buy more.
 
+Both compared with the same stock: [averaging down vs averaging up]({{ '/stock-honey/averaging-down-vs-up/' | relative_url }})
+
 ## Profit and rate of return
 
 <p class="formula">Net profit = (sell price − average price) × shares<br>Rate of return = (sell price − average price) ÷ average price × 100</p>

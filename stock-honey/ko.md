@@ -24,6 +24,8 @@ image: /assets/img/stock-honey/icon.png
 
 <p><a href="{{ '/stock-honey/ko/calculator/' | relative_url }}"><b>웹에서 바로 쓰는 물타기 계산기 →</b></a></p>
 
+<p><a href="{{ '/stock-honey/ko/averaging-down-vs-up/' | relative_url }}"><b>가이드: 물타기와 불타기 차이, 같은 주식으로 비교 →</b></a></p>
+
 <div class="shots">
   <img src="{{ '/assets/img/stock-honey/ko-avg.jpg' | relative_url }}" alt="평단가 계산 화면" loading="lazy" width="540" height="960">
   <img src="{{ '/assets/img/stock-honey/ko-avg-list.jpg' | relative_url }}" alt="평단가별 필요 주식 수와 필요 비용을 보여 주는 평단가 목록 화면" loading="lazy" width="540" height="960">

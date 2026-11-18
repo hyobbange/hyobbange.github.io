@@ -97,6 +97,8 @@ If both sides match, **the arithmetic is correct**. The check uses only backsigh
 | Best for | **Many intermediate points** (profiles, cross sections). Fast to calculate | Work with mostly turning points. Every point is checked, good for precise work |
 | Check | Turning points only | Includes intermediate points |
 
+The same example worked with the other method: [rise and fall method]({{ '/levelbook/rise-and-fall/' | relative_url }})
+
 ## FAQ
 
 ### When does the instrument height change?
