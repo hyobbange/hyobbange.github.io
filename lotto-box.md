@@ -25,6 +25,8 @@ image: /assets/img/lotto-box/icon.png
 
 <p><a href="{{ '/lotto-box/pension-720/' | relative_url }}"><b>가이드: 연금복권 720+ 번호 구조와 당첨 등수·확률 →</b></a></p>
 
+<p><a href="{{ '/lotto-box/lotto-645-odds/' | relative_url }}"><b>가이드: 로또 6/45 등수별 당첨 확률과 당첨 조건 →</b></a></p>
+
 <div class="shots">
   <img src="{{ '/assets/img/lotto-box/ko-boxes.jpg' | relative_url }}" alt="45개의 상자 중 하나를 골라 여는 로또 번호 추첨 화면" loading="lazy" width="540" height="1205">
   <img src="{{ '/assets/img/lotto-box/ko-lotto-result.jpg' | relative_url }}" alt="로또 번호 6개 추첨 완료 화면" loading="lazy" width="540" height="1205">

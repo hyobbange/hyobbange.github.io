@@ -130,4 +130,4 @@ image: /assets/img/lotto-box/icon.png
 
 복권 앞면에 적힌 지급기한까지예요. 기한을 넘기면 당첨금은 복권기금으로 넘어가요.
 
-<p class="muted"><a href="{{ '/lotto-box/' | relative_url }}">로또 상자 앱 소개</a> · 복권은 만 19세 이상만 살 수 있어요. 건전하게 즐겨 주세요.</p>
+<p class="muted"><a href="{{ '/lotto-box/lotto-645-odds/' | relative_url }}">로또 6/45 등수별 당첨 확률</a> · <a href="{{ '/lotto-box/' | relative_url }}">로또 상자 앱 소개</a> · 복권은 만 19세 이상만 살 수 있어요. 건전하게 즐겨 주세요.</p>

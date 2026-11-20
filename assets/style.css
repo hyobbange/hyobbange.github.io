@@ -94,6 +94,7 @@ img { max-width: 100%; height: auto; }
 }
 .shots { display: flex; gap: 12px; overflow-x: auto; padding: 4px 0 12px; scroll-snap-type: x mandatory; }
 .shots img { width: 180px; flex: none; border-radius: 14px; border: 1px solid var(--line); scroll-snap-align: start; }
+.clip { display: block; width: 240px; max-width: 100%; height: auto; margin: 8px 0 16px; border-radius: 14px; border: 1px solid var(--line); background: var(--card); }
 .lang-switch { font-size: 0.95rem; color: var(--muted); }
 
 /* 표 */

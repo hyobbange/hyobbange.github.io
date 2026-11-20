@@ -24,6 +24,8 @@ image: /assets/img/oddball/icon.png
 
 <p><a href="{{ '/oddball/ko/tips/' | relative_url }}"><b>가이드: 숨은그림찾기·다른그림찾기 잘하는 요령 7가지 →</b></a></p>
 
+<p><a href="{{ '/oddball/ko/moving-crowd/' | relative_url }}"><b>가이드: 움직이는 군중 속에서 찾는 요령 →</b></a></p>
+
 <div class="shots">
   <img src="{{ '/assets/img/oddball/ko-1-packs.jpg' | relative_url }}" alt="팩 선택 화면" loading="lazy" width="540" height="1080">
   <img src="{{ '/assets/img/oddball/ko-2-village.jpg' | relative_url }}" alt="마을 맵의 군중" loading="lazy" width="540" height="1080">
