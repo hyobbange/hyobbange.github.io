@@ -4,14 +4,14 @@ permalink: /oddball/ko/moving-crowd/
 lang: ko
 app: oddball
 last_modified_at: 2026-11-20
-alternates: { en: /oddball/moving-crowd/, ko: /oddball/ko/moving-crowd/ }
+alternates: { en: /oddball/moving-crowd/, ko: /oddball/ko/moving-crowd/, ja: /oddball/ja/moving-crowd/, es: /oddball/es/moving-crowd/, pt-BR: /oddball/pt/moving-crowd/ }
 description: 캐릭터가 돌아다니고 건물 뒤에 숨는 움직이는 숨은그림찾기. 멈춘 그림과 무엇이 다른지, 움직이는 군중 속에서 빨리 찾는 요령 5가지와 확대·맵 돌리기·힌트 쓰는 법까지.
 image: /assets/img/oddball/icon.png
 ---
 
 # 움직이는 숨은 사람 찾기 게임
 
-<p class="lang-switch"><a href="{{ '/oddball/moving-crowd/' | relative_url }}" lang="en">English</a> · 한국어</p>
+<p class="lang-switch"><a href="{{ '/oddball/moving-crowd/' | relative_url }}" lang="en">English</a> · <a href="{{ '/oddball/ja/moving-crowd/' | relative_url }}" lang="ja">日本語</a> · <a href="{{ '/oddball/es/moving-crowd/' | relative_url }}" lang="es">Español</a> · <a href="{{ '/oddball/pt/moving-crowd/' | relative_url }}" lang="pt-BR">Português</a> · 한국어</p>
 
 움직이는 숨은 사람 찾기는 **찾는 동안에도 화면이 바뀌는** 숨은그림찾기예요. 멈춘 그림에서는 한 번 본 곳을 다시 볼 필요가 없지만, 움직이는 군중에서는 방금 확인한 곳에 다른 캐릭터가 걸어 들어오고, 찾는 대상이 건물 뒤에 숨었다 나오기도 해요. 그래서 **사람을 따라가지 말고 구역을 맡아 보는 것**이 기본 요령이에요.
 

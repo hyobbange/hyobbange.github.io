@@ -4,14 +4,14 @@ permalink: /oddball/moving-crowd/
 lang: en
 app: oddball
 last_modified_at: 2026-11-20
-alternates: { en: /oddball/moving-crowd/, ko: /oddball/ko/moving-crowd/ }
+alternates: { en: /oddball/moving-crowd/, ko: /oddball/ko/moving-crowd/, ja: /oddball/ja/moving-crowd/, es: /oddball/es/moving-crowd/, pt-BR: /oddball/pt/moving-crowd/ }
 description: In a moving hidden object game, characters walk around and hide behind buildings. How it differs from a still picture, 5 tips for searching a moving crowd, and how to use zoom, map rotation and hints.
 image: /assets/img/oddball/icon.png
 ---
 
 # Moving Hidden Object Games: Searching a Crowd That Walks
 
-<p class="lang-switch">English · <a href="{{ '/oddball/ko/moving-crowd/' | relative_url }}" lang="ko">한국어</a></p>
+<p class="lang-switch">English · <a href="{{ '/oddball/ja/moving-crowd/' | relative_url }}" lang="ja">日本語</a> · <a href="{{ '/oddball/es/moving-crowd/' | relative_url }}" lang="es">Español</a> · <a href="{{ '/oddball/pt/moving-crowd/' | relative_url }}" lang="pt-BR">Português</a> · <a href="{{ '/oddball/ko/moving-crowd/' | relative_url }}" lang="ko">한국어</a></p>
 
 A moving hidden object game is a search where **the picture keeps changing while you look**. In a still picture you never need to look at the same spot twice. In a moving crowd, other characters walk into the area you just checked, and the one you are looking for can slip behind a building and come back out. So the basic rule is: **watch areas, not people.**
 

@@ -15,7 +15,7 @@ HFX Lab 공개 사이트. GitHub Pages(Jekyll)로 `main` 브랜치 루트를 그
 | `_layouts/policy.html`, `_includes/policy-view.html`, `_data/i18n.yml` | | 시행일·언어 전환·이전/예정 버전 안내·변경 이력(적용 기간 자동 계산), 화면 문구 (en·ko·ja) |
 | `oddball.md`, `oddball/ko.md` | `/oddball/`, `/oddball/ko/` | Oddball(이상한 녀석 찾기, `claude-apps/monster-hunt`) 소개 (영·한) |
 | `oddball/tips*.md` | `/oddball/tips/`, `/oddball/{ko,ja,es,pt}/tips/` | 가이드: 숨은그림찾기·다른그림찾기 요령 7가지 (영·한·일·스·포, 앱 언어와 같게). 게임 용어는 앱 l10n arb와 같게 |
-| `oddball/moving-crowd*.md`, `assets/img/oddball/moving-crowd.mp4` | `/oddball/moving-crowd/`, `/oddball/ko/moving-crowd/` | 가이드: 움직이는 군중 속에서 찾는 요령 (영·한). 영상은 스토어 미리보기(ko)에서 2~5.6초를 소리 없이 잘라 낸 것 |
+| `oddball/moving-crowd*.md`, `assets/img/oddball/moving-crowd.mp4` | `/oddball/moving-crowd/`, `/oddball/{ko,ja,es,pt}/moving-crowd/` | 가이드: 움직이는 군중 속에서 찾는 요령 (영·한·일·스·포, 요령 글과 같은 언어). 영상은 스토어 미리보기(ko)에서 2~5.6초를 소리 없이 잘라 낸 것 |
 | `keyring-gacha.md` | `/keyring-gacha/` | 키링 가챠(`claude-apps/keyring-gacha`) 소개. 앱·스토어가 한국어만이라 한국어 페이지 하나 |
 | `lotto-box.md` | `/lotto-box/` | 로또 상자(`com.hfx.randombox`) 소개. 한국어만 |
 | `lotto-box/pension-720.md` | `/lotto-box/pension-720/` | 가이드: 연금복권 720+ 번호 구조·당첨 등수 (동행복권 공식 자료, 2026-11-15 확인) |
