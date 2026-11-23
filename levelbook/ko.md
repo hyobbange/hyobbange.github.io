@@ -28,6 +28,8 @@ image: /assets/img/levelbook/icon.png
 
 <p><a href="{{ '/levelbook/ko/rise-and-fall/' | relative_url }}"><b>가이드: 승강식 야장 기입법 계산 방법과 예제 →</b></a></p>
 
+<p><a href="{{ '/levelbook/ko/field-book-methods/' | relative_url }}"><b>가이드: 야장 기입법 종류, 기고식·승강식·고차식 비교 →</b></a></p>
+
 <div class="shots">
   <img src="{{ '/assets/img/levelbook/ko-fieldbook.jpg' | relative_url }}" alt="BS, TP, IP, IH, GH 열과 검산 줄이 있는 야장 화면" loading="lazy" width="540" height="1171">
   <img src="{{ '/assets/img/levelbook/ko-list.jpg' | relative_url }}" alt="저장된 야장 목록 화면" loading="lazy" width="540" height="1171">

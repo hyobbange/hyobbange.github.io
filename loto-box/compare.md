@@ -126,4 +126,4 @@ image: /assets/img/loto-box/icon.png
 - [ビンゴ5（BINGO5）のご案内｜宝くじ公式サイト](https://www.takarakuji-official.jp/kuji/bingo5/)
 - [ナンバーズ（NUMBERS）のご案内｜宝くじ公式サイト](https://www.takarakuji-official.jp/kuji/numbers/)
 
-<p class="muted"><a href="{{ '/loto-box/' | relative_url }}">ロトの箱について</a></p>
+<p class="muted"><a href="{{ '/loto-box/loto6-odds/' | relative_url }}">ロト6の当せん確率と当せん条件</a> · <a href="{{ '/loto-box/' | relative_url }}">ロトの箱について</a></p>

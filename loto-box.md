@@ -24,6 +24,8 @@ image: /assets/img/loto-box/icon.png
 
 <p><a href="{{ '/loto-box/compare/' | relative_url }}"><b>ガイド：ロト7・ロト6・ミニロト・ビンゴ5・ナンバーズの違い →</b></a></p>
 
+<p><a href="{{ '/loto-box/loto6-odds/' | relative_url }}"><b>ガイド：ロト6の当せん確率と当せん条件 →</b></a></p>
+
 <div class="shots">
   <img src="{{ '/assets/img/loto-box/ja-home.jpg' | relative_url }}" alt="ロト7・ロト6・ミニロト・ビンゴ5・ナンバーズ4・ナンバーズ3を選ぶホーム画面" loading="lazy" width="540" height="1205">
   <img src="{{ '/assets/img/loto-box/ja-boxes.jpg' | relative_url }}" alt="番号が隠された箱をドラッグ＆ドロップで選ぶ抽選画面" loading="lazy" width="540" height="1205">
