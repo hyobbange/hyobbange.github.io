@@ -31,6 +31,15 @@
 
 - 2026-11-15 · 앱 페이지 3개: 로또 상자(`/lotto-box/`, 한국어), 주식허니 계산기(`/stock-honey/`, 영·한), 야장 수첩(`/levelbook/`, 영·한). 스토어 문구·스크린샷 바탕. 검색 기초: `jekyll-sitemap`(sitemap.xml·robots.txt), 언어판 연결(hreflang), 정식 주소(canonical), 아이폰 App Store 배너(apple-itunes-app)
 
+## 다음 개인정보처리방침 개정 때 함께 반영할 것
+
+방침을 새 버전으로 낼 때 이 목록을 먼저 보고 같이 넣는다. 넣은 항목은 체크하고 어느 버전에 넣었는지 적는다.
+
+- [ ] 아동의 개인정보 조항 문구를 분명하게 (사용자 2026-11-25). "알면서 수집하지 않습니다"가 모호함 → 나이를 묻지 않는다는 점과 알게 되면 삭제한다는 점을 넣는다. 한·영·일 모두.
+  - 한: HFX Lab의 서비스는 만 14세 미만 아동을 대상으로 하지 않습니다. HFX Lab은 이용자의 나이를 묻거나 확인하지 않으며, 만 14세 미만 아동의 개인정보가 처리된 사실을 알게 되면 지체 없이 삭제합니다.
+  - 영: Our services are not intended for children under the age of 13, or the minimum age required by applicable law. We do not ask for or verify users' ages, and if we learn that we have processed personal data of such a child, we will delete it without delay.
+  - 일: 当社のサービスは、13歳未満（または適用法令が定める年齢未満）の子どもを対象としていません。当社はユーザーの年齢を尋ねたり確認したりせず、そのような子どもの個人情報を取り扱ったことが分かった場合は、速やかに削除します。
+
 ## 3단계: 도메인 연결 (목표 1·2) — 완료 (2026-11-05)
 순서대로 한다. 1~2는 지금 해도 사이트에 영향 없음.
 
