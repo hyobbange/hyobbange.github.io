@@ -25,6 +25,8 @@ Unlike a still picture, this crowd **moves**: hundreds of characters walk around
 
 <p><a href="{{ '/oddball/moving-crowd/' | relative_url }}"><b>Guide: how to search a moving crowd →</b></a></p>
 
+<p><a href="{{ '/oddball/swirl/' | relative_url }}"><b>Guide: how to clear Swirl Stages →</b></a></p>
+
 <div class="shots">
   <img src="{{ '/assets/img/oddball/en-1-packs.jpg' | relative_url }}" alt="Pack selection screen" loading="lazy" width="540" height="1080">
   <img src="{{ '/assets/img/oddball/en-2-village.jpg' | relative_url }}" alt="A crowd in the village map" loading="lazy" width="540" height="1080">

@@ -16,10 +16,12 @@ HFX Lab 공개 사이트. GitHub Pages(Jekyll)로 `main` 브랜치 루트를 그
 | `oddball.md`, `oddball/ko.md` | `/oddball/`, `/oddball/ko/` | Oddball(이상한 녀석 찾기, `claude-apps/monster-hunt`) 소개 (영·한) |
 | `oddball/tips*.md` | `/oddball/tips/`, `/oddball/{ko,ja,es,pt}/tips/` | 가이드: 숨은그림찾기·다른그림찾기 요령 7가지 (영·한·일·스·포, 앱 언어와 같게). 게임 용어는 앱 l10n arb와 같게 |
 | `oddball/moving-crowd*.md`, `assets/img/oddball/moving-crowd.mp4` | `/oddball/moving-crowd/`, `/oddball/{ko,ja,es,pt}/moving-crowd/` | 가이드: 움직이는 군중 속에서 찾는 요령 (영·한·일·스·포, 요령 글과 같은 언어). 영상은 스토어 미리보기(ko)에서 2~5.6초를 소리 없이 잘라 낸 것 |
+| `oddball/swirl*.md` | `/oddball/swirl/`, `/oddball/{ko,ja,es,pt}/swirl/` | 가이드: 소용돌이 스테이지 공략 (영·한·일·스·포). 앱 스테이지 설정(팩마다 6·12·18·24·30번)·생성 로직으로 확인. 게임 용어는 앱 arb와 같게 |
 | `keyring-gacha.md` | `/keyring-gacha/` | 키링 가챠(`claude-apps/keyring-gacha`) 소개. 앱·스토어가 한국어만이라 한국어 페이지 하나 |
 | `lotto-box.md` | `/lotto-box/` | 로또 상자(`com.hfx.randombox`) 소개. 한국어만 |
 | `lotto-box/pension-720.md` | `/lotto-box/pension-720/` | 가이드: 연금복권 720+ 번호 구조·당첨 등수 (동행복권 공식 자료, 2026-11-15 확인) |
 | `lotto-box/lotto-645-odds.md` | `/lotto-box/lotto-645-odds/` | 가이드: 로또 6/45 등수별 당첨 확률과 조건 (동행복권 로또6/45 소개, 2026-11-20 확인) |
+| `lotto-box/lotto-tax.md` | `/lotto-box/lotto-tax/` | 가이드: 로또 당첨금 세금과 실수령액 (동행복권 당첨자 가이드, 2026-11-25 확인. 3억 초과분 33%는 사용자 확인) |
 | `loto-box.md` | `/loto-box/` | ロトの箱(`com.hfx.lotobox`, 소스 `hyobbange/loto_box`) 소개. 앱·스토어가 일본어만이라 일본어 페이지 하나 |
 | `loto-box/compare.md` | `/loto-box/compare/` | 가이드: 일본 숫자 선택식 복권 6종 비교 (宝くじ公式サイト 기준, 2026-11-16 확인. 공식 사이트가 작업 환경에서 봇 차단이라 공식 도메인 검색 + 계산으로 확인) |
 | `loto-box/loto6-odds.md` | `/loto-box/loto6-odds/` | 가이드: ロト6 당첨 확률과 조건 (宝くじ公式サイト 기준, 2026-11-23 확인, 공식 도메인 검색 + 계산) |
