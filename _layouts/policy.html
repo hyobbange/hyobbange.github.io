@@ -12,20 +12,24 @@ layout: default
 {%- assign all = site.policies | where: "doc", page.doc | where: "lang", page.lang | sort: "version" -%}
 {%- assign future = all | where_exp: "v", "v.version > today" -%}
 {%- assign next = future | first -%}
-{%- if page.collection == "policies" -%}{%- assign shown_now = page -%}{%- assign shown_next = page -%}
+{%- if page.collection == "policies" -%}{%- assign shown_now = page -%}
 {%- else -%}
   {%- assign effective = all | where_exp: "v", "v.version <= today" -%}
   {%- assign shown_now = effective | last | default: next -%}
-  {%- assign shown_next = next -%}
 {%- endif -%}
 
 <div class="policy-view" data-until="{{ next.version }}">
 {% include policy-view.html shown=shown_now as_of=today %}
 </div>
-{%- if next %}
-<div class="policy-view" data-from="{{ next.version }}" hidden>
-{% include policy-view.html shown=shown_next as_of=next.version %}
+{%- comment -%} 예정 버전이 여러 개면 시행일마다 화면을 하나씩 만들어 둔다 (스크립트가 날짜 순서대로 바꿔 보여 줌) {%- endcomment -%}
+{%- for f in future -%}
+{%- assign after = future[forloop.index] -%}
+{%- if page.collection == "policies" %}{% assign shown_f = page %}{% else %}{% assign shown_f = f %}{% endif %}
+<div class="policy-view" data-from="{{ f.version }}" data-until="{{ after.version }}" hidden>
+{% include policy-view.html shown=shown_f as_of=f.version %}
 </div>
+{%- endfor -%}
+{%- if next %}
 <script>
 (function () {
   var today = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10); // 한국 시간
