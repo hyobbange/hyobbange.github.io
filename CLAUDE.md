@@ -29,11 +29,13 @@ HFX Lab 공개 사이트. GitHub Pages(Jekyll)로 `main` 브랜치 루트를 그
 | `stock-honey/calculator.md`, `stock-honey/calculator-ko.md`, `_includes/stock-calc.html`, `assets/js/stock-calc.js`, `_data/stock_calc.yml` | `/stock-honey/calculator/`, `/stock-honey/ko/calculator/` | 웹 물타기·평단가·수익 계산기. 계산식은 앱 cubit과 같게 유지 (앱이 바뀌면 함께 고친다) |
 | `stock-honey/averaging-down-vs-up*.md` | `/stock-honey/averaging-down-vs-up/`, `/stock-honey/ko/averaging-down-vs-up/` | 가이드: 물타기와 불타기 차이 (같은 보유 주식으로 비교, 영·한. 계산만, 투자 조언 없음) |
 | `stock-honey/average-cost-methods*.md` | `/stock-honey/average-cost-methods/`, `/stock-honey/ko/average-cost-methods/` | 가이드: 증권사마다 평단가가 다른 이유, 이동평균법·선입선출법 (영·한. 증권사 이름·세금 방식은 단정하지 않음) |
+| `stock-honey/crypto-average-price*.md` | `/stock-honey/crypto-average-price/`, `/stock-honey/ko/crypto-average-price/` | 가이드: 코인 평단가 계산하는 법, 소수 수량·금액으로 산 경우 (영·한. 거래소 이름·수수료율은 쓰지 않음, 앱에 금액 입력 칸이 없어 수량을 먼저 구하는 방법으로) |
 | `_includes/app-cta.html` | | 글 중간·끝의 앱 다운로드 상자 (`app`, `text`) |
 | `levelbook.md`, `levelbook/ko.md` | `/levelbook/`, `/levelbook/ko/` | 야장 수첩, 레벨북(`loof.utils.levelbook`, 소스 `hyobbange/levelbook`) 소개 (영·한) |
 | `levelbook/height-of-instrument*.md` | `/levelbook/height-of-instrument/`, `/levelbook/ko/height-of-instrument/` | 가이드: 기고식 야장 기입법 예제 (영·한) |
 | `levelbook/rise-and-fall*.md` | `/levelbook/rise-and-fall/`, `/levelbook/ko/rise-and-fall/` | 가이드: 승강식 야장 기입법 (기고식 가이드와 같은 예제, 영·한. 열 이름 한국어 승/강, 영어 Rise/Fall — 사용자 지정) |
 | `levelbook/field-book-methods*.md` | `/levelbook/field-book-methods/`, `/levelbook/ko/field-book-methods/` | 가이드: 야장 기입법 종류 기고식·승강식·고차식 비교 (같은 예제, 영·한. 영어는 고차식을 backsight/foresight only로) |
+| `levelbook/closure-error*.md` | `/levelbook/closure-error/`, `/levelbook/ko/closure-error/` | 가이드: 레벨 측량 폐합 오차와 거리 비례 조정 (영·한. 허용 오차 K는 규정마다 달라 계산 예시로만) |
 | `levelbook/calculator*.md`, `_includes/levelbook-calc.html`, `assets/js/levelbook-calc.js` | `/levelbook/calculator/`, `/levelbook/ko/calculator/` | 웹 기고식 야장 계산기. 줄 상태·계산·검산은 앱 `lib/page/sheet/cubit/sheet_cubit.dart`와 같게, 소수는 정확 계산(BigInt). 앱이 바뀌면 함께 고친다 |
 | `_includes/store-links.html` | | `apps.yml`의 스토어 주소로 버튼 (비어 있으면 숨김) |
 | `404.md` | 없는 주소 | 안내 |

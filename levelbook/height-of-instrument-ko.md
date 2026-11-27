@@ -119,4 +119,4 @@ image: /assets/img/levelbook/icon.png
 
 {% include app-cta.html app="levelbook" text="현장에서 바로 쓰는 기고식 야장 앱, 야장 수첩" %}
 
-<p class="muted"><a href="{{ '/levelbook/ko/' | relative_url }}">야장 수첩 앱 소개</a></p>
+<p class="muted"><a href="{{ '/levelbook/ko/closure-error/' | relative_url }}">폐합 오차와 조정 방법</a> · <a href="{{ '/levelbook/ko/' | relative_url }}">야장 수첩 앱 소개</a></p>

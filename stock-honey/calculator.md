@@ -61,7 +61,7 @@ No. Broker fees and taxes are not included, so real amounts can be slightly diff
 
 ### Can I use fractional quantities, like crypto?
 
-Yes. You can enter numbers like 0.5. Choose how many decimal places to show at the bottom of the calculator.
+Yes. You can enter numbers like 0.5. Choose how many decimal places to show at the bottom of the calculator. A worked example: [how to calculate your crypto average price]({{ '/stock-honey/crypto-average-price/' | relative_url }}).
 
 ### Is what I enter saved or sent anywhere?
 

@@ -28,6 +28,8 @@ A collection of calculators for trading stocks or cryptocurrencies. See your new
 
 <p><a href="{{ '/stock-honey/average-cost-methods/' | relative_url }}"><b>Guide: why your average price differs between apps →</b></a></p>
 
+<p><a href="{{ '/stock-honey/crypto-average-price/' | relative_url }}"><b>Guide: how to calculate your crypto average price →</b></a></p>
+
 <div class="shots">
   <img src="{{ '/assets/img/stock-honey/en-avg.jpg' | relative_url }}" alt="Average share price calculator screen" loading="lazy" width="540" height="960">
   <img src="{{ '/assets/img/stock-honey/en-avg-list.jpg' | relative_url }}" alt="Average price list showing required shares and cost for each target price" loading="lazy" width="540" height="960">

@@ -115,4 +115,4 @@ Usually one addition or subtraction is wrong. Recalculate from the turning point
 
 {% include app-cta.html app="levelbook" text="A height of instrument field book app for the site" %}
 
-<p class="muted"><a href="{{ '/levelbook/' | relative_url }}">About Surveying Leveling Field Notes</a></p>
+<p class="muted"><a href="{{ '/levelbook/closure-error/' | relative_url }}">Misclosure and adjustment</a> · <a href="{{ '/levelbook/' | relative_url }}">About Surveying Leveling Field Notes</a></p>

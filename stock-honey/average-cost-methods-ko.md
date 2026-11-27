@@ -58,4 +58,4 @@ image: /assets/img/stock-honey/icon.png
 
 {% include app-cta.html app="stock-honey" text="평단가·물타기 목록·수익 계산을 앱으로, **주식허니 계산기**" %}
 
-<p class="muted"><a href="{{ '/stock-honey/ko/averaging-down-vs-up/' | relative_url }}">물타기와 불타기 차이</a> · <a href="{{ '/stock-honey/ko/' | relative_url }}">주식허니 계산기 앱 소개</a> · 이 글은 계산 방법만 설명하며 투자 조언이 아니에요.</p>
+<p class="muted"><a href="{{ '/stock-honey/ko/averaging-down-vs-up/' | relative_url }}">물타기와 불타기 차이</a> · <a href="{{ '/stock-honey/ko/crypto-average-price/' | relative_url }}">코인 평단가 계산하는 법</a> · <a href="{{ '/stock-honey/ko/' | relative_url }}">주식허니 계산기 앱 소개</a> · 이 글은 계산 방법만 설명하며 투자 조언이 아니에요.</p>

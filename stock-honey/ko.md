@@ -28,6 +28,8 @@ image: /assets/img/stock-honey/icon.png
 
 <p><a href="{{ '/stock-honey/ko/average-cost-methods/' | relative_url }}"><b>가이드: 증권사마다 평단가가 다른 이유 →</b></a></p>
 
+<p><a href="{{ '/stock-honey/ko/crypto-average-price/' | relative_url }}"><b>가이드: 코인 평단가 계산하는 법 →</b></a></p>
+
 <div class="shots">
   <img src="{{ '/assets/img/stock-honey/ko-avg.jpg' | relative_url }}" alt="평단가 계산 화면" loading="lazy" width="540" height="960">
   <img src="{{ '/assets/img/stock-honey/ko-avg-list.jpg' | relative_url }}" alt="평단가별 필요 주식 수와 필요 비용을 보여 주는 평단가 목록 화면" loading="lazy" width="540" height="960">

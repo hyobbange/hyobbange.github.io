@@ -102,4 +102,4 @@ image: /assets/img/levelbook/icon.png
 
 세 방식 모두 나올 수 있어요. 같은 읽음값을 세 방식으로 풀어 보면 헷갈리지 않아요.
 
-<p class="muted"><a href="{{ '/levelbook/ko/height-of-instrument/' | relative_url }}">기고식 야장 기입법</a> · <a href="{{ '/levelbook/ko/rise-and-fall/' | relative_url }}">승강식 야장 기입법</a> · <a href="{{ '/levelbook/ko/' | relative_url }}">야장 수첩 앱 소개</a></p>
+<p class="muted"><a href="{{ '/levelbook/ko/height-of-instrument/' | relative_url }}">기고식 야장 기입법</a> · <a href="{{ '/levelbook/ko/rise-and-fall/' | relative_url }}">승강식 야장 기입법</a> · <a href="{{ '/levelbook/ko/closure-error/' | relative_url }}">폐합 오차와 조정 방법</a> · <a href="{{ '/levelbook/ko/' | relative_url }}">야장 수첩 앱 소개</a></p>

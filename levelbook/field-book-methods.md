@@ -102,4 +102,4 @@ Check that ΣBS − ΣFS equals last ground height − first ground height. With
 
 Any of the three can. Solving the same readings all three ways is a good way to keep them straight.
 
-<p class="muted"><a href="{{ '/levelbook/height-of-instrument/' | relative_url }}">Height of instrument method</a> · <a href="{{ '/levelbook/rise-and-fall/' | relative_url }}">Rise and fall method</a> · <a href="{{ '/levelbook/' | relative_url }}">About Surveying Leveling Field Notes</a></p>
+<p class="muted"><a href="{{ '/levelbook/height-of-instrument/' | relative_url }}">Height of instrument method</a> · <a href="{{ '/levelbook/rise-and-fall/' | relative_url }}">Rise and fall method</a> · <a href="{{ '/levelbook/closure-error/' | relative_url }}">Misclosure and adjustment</a> · <a href="{{ '/levelbook/' | relative_url }}">About Surveying Leveling Field Notes</a></p>

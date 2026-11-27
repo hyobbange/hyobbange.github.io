@@ -58,4 +58,4 @@ The **Stock Honey Calculator** works out your average as total cost of the share
 
 {% include app-cta.html app="stock-honey" text="Average price, averaging down list and profit calculators in one app: **Stock Honey Calculator**" %}
 
-<p class="muted"><a href="{{ '/stock-honey/averaging-down-vs-up/' | relative_url }}">Averaging down vs averaging up</a> · <a href="{{ '/stock-honey/' | relative_url }}">About Stock Honey Calculator</a> · This page explains the math only and is not investment advice.</p>
+<p class="muted"><a href="{{ '/stock-honey/averaging-down-vs-up/' | relative_url }}">Averaging down vs averaging up</a> · <a href="{{ '/stock-honey/crypto-average-price/' | relative_url }}">Crypto average price</a> · <a href="{{ '/stock-honey/' | relative_url }}">About Stock Honey Calculator</a> · This page explains the math only and is not investment advice.</p>
